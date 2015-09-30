@@ -19,6 +19,7 @@
 		2A05E6141BB9AF6700211A5A /* AgregarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A05E6131BB9AF6700211A5A /* AgregarVC.m */; };
 		2A05E6171BB9B28F00211A5A /* EditarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A05E6161BB9B28F00211A5A /* EditarVC.m */; };
 		2A2D30701BBB2A0B00FAD041 /* Tarea+Modelo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D306F1BBB2A0B00FAD041 /* Tarea+Modelo.m */; };
+		2A556B571BBC748E00C4C1ED /* LongFromVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A556B561BBC748E00C4C1ED /* LongFromVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		2A05E6161BB9B28F00211A5A /* EditarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditarVC.m; sourceTree = "<group>"; };
 		2A2D306E1BBB2A0B00FAD041 /* Tarea+Modelo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Tarea+Modelo.h"; sourceTree = "<group>"; };
 		2A2D306F1BBB2A0B00FAD041 /* Tarea+Modelo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Tarea+Modelo.m"; sourceTree = "<group>"; };
+		2A556B551BBC748E00C4C1ED /* LongFromVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LongFromVC.h; path = ../LongFromVC.h; sourceTree = "<group>"; };
+		2A556B561BBC748E00C4C1ED /* LongFromVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LongFromVC.m; path = ../LongFromVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +100,8 @@
 			children = (
 				2A05E5E21BB9A91F00211A5A /* Supporting Files */,
 				2A05E60B1BB9A93F00211A5A /* DB y models */,
+				2A556B551BBC748E00C4C1ED /* LongFromVC.h */,
+				2A556B561BBC748E00C4C1ED /* LongFromVC.m */,
 				2A05E5E61BB9A92000211A5A /* AppDelegate.h */,
 				2A05E5E71BB9A92000211A5A /* AppDelegate.m */,
 				2A05E6151BB9B28F00211A5A /* EditarVC.h */,
@@ -257,6 +262,7 @@
 				2A05E6141BB9AF6700211A5A /* AgregarVC.m in Sources */,
 				2A05E6111BB9AA5700211A5A /* TareasTVC.m in Sources */,
 				2A05E5E51BB9A92000211A5A /* main.m in Sources */,
+				2A556B571BBC748E00C4C1ED /* LongFromVC.m in Sources */,
 				2A05E60E1BB9A99A00211A5A /* Tarea.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

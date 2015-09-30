@@ -146,11 +146,121 @@
             </objects>
             <point key="canvasLocation" x="3084" y="-13"/>
         </scene>
+        <!--Long Form :)-->
+        <scene sceneID="8B8-ki-dcC">
+            <objects>
+                <viewController id="YMW-Re-Wfb" customClass="LongFromVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5k8-0u-lZS"/>
+                        <viewControllerLayoutGuide type="bottom" id="gy5-Hy-D8B"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rhl-fb-DFS">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OrP-vh-FFD">
+                                <rect key="frame" x="-4" y="0.0" width="182" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Uno:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zcf-vo-6LE">
+                                        <rect key="frame" x="20" y="24" width="37" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="egq-4g-lc6">
+                                        <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="197" id="h1x-6b-cr0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="h1x-6b-cr0"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="h1x-6b-cr0"/>
+                                            </mask>
+                                        </variation>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.60198907871115004" green="0.62163478639824932" blue="0.77641858549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Zcf-vo-6LE" firstAttribute="top" secondItem="OrP-vh-FFD" secondAttribute="top" constant="39" id="DcX-8e-cHG"/>
+                                    <constraint firstAttribute="trailing" secondItem="Zcf-vo-6LE" secondAttribute="trailing" constant="342" id="Hen-74-bvC"/>
+                                    <constraint firstItem="egq-4g-lc6" firstAttribute="centerX" secondItem="OrP-vh-FFD" secondAttribute="centerX" id="RTd-h2-uQM"/>
+                                    <constraint firstItem="Zcf-vo-6LE" firstAttribute="leading" secondItem="OrP-vh-FFD" secondAttribute="leading" constant="21" id="Z8b-Nk-gZw"/>
+                                    <constraint firstItem="egq-4g-lc6" firstAttribute="centerY" secondItem="OrP-vh-FFD" secondAttribute="centerY" id="aek-NX-hZ5"/>
+                                    <constraint firstAttribute="bottom" secondItem="Zcf-vo-6LE" secondAttribute="bottom" constant="540" id="hIh-r4-pAa"/>
+                                    <constraint firstAttribute="height" constant="600" id="v5F-MP-mhb"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="egq-4g-lc6"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="v5F-MP-mhb"/>
+                                        <exclude reference="DcX-8e-cHG"/>
+                                        <exclude reference="Hen-74-bvC"/>
+                                        <exclude reference="Z8b-Nk-gZw"/>
+                                        <exclude reference="hIh-r4-pAa"/>
+                                        <exclude reference="RTd-h2-uQM"/>
+                                        <exclude reference="aek-NX-hZ5"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="egq-4g-lc6"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <include reference="v5F-MP-mhb"/>
+                                        <include reference="DcX-8e-cHG"/>
+                                        <include reference="Hen-74-bvC"/>
+                                        <include reference="Z8b-Nk-gZw"/>
+                                        <include reference="hIh-r4-pAa"/>
+                                        <include reference="RTd-h2-uQM"/>
+                                        <include reference="aek-NX-hZ5"/>
+                                    </mask>
+                                </variation>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OrP-vh-FFD" firstAttribute="top" secondItem="rhl-fb-DFS" secondAttribute="top" id="S1K-Yq-tYt"/>
+                            <constraint firstItem="OrP-vh-FFD" firstAttribute="leading" secondItem="rhl-fb-DFS" secondAttribute="leading" id="cgd-Nu-tWs"/>
+                            <constraint firstItem="OrP-vh-FFD" firstAttribute="width" secondItem="rhl-fb-DFS" secondAttribute="width" id="geq-t9-10M"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="S1K-Yq-tYt"/>
+                                <exclude reference="cgd-Nu-tWs"/>
+                                <exclude reference="geq-t9-10M"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="S1K-Yq-tYt"/>
+                                <include reference="cgd-Nu-tWs"/>
+                                <include reference="geq-t9-10M"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Long Form :)" image="file-document-7" id="kgf-8u-FdU"/>
+                    <connections>
+                        <outlet property="scrollView" destination="OrP-vh-FFD" id="xzD-S0-lVr"/>
+                        <outlet property="textField1" destination="egq-4g-lc6" id="IFc-oQ-gzm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uNI-qO-Um6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1590" y="-673"/>
+        </scene>
         <!--Tareas-->
         <scene sceneID="NcC-Nu-egw">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8yA-tA-qnq" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Tareas" image="tag-7" id="uKq-OK-3ze"/>
+                    <tabBarItem key="tabBarItem" title="Tareas" image="circle-tick-7" id="uKq-OK-3ze"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="b41-CK-ADM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -263,6 +373,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="8yA-tA-qnq" kind="relationship" relationship="viewControllers" id="Ape-tB-eKs"/>
+                        <segue destination="YMW-Re-Wfb" kind="relationship" relationship="viewControllers" id="K0i-7s-mNH"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L4j-nG-wgT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -271,6 +382,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="tag-7" width="30" height="30"/>
+        <image name="circle-tick-7" width="30" height="30"/>
+        <image name="file-document-7" width="30" height="30"/>
     </resources>
 </document>
