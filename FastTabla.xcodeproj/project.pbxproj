@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A05E5E51BB9A92000211A5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A05E5E41BB9A92000211A5A /* main.m */; };
+		2A05E5E81BB9A92000211A5A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A05E5E71BB9A92000211A5A /* AppDelegate.m */; };
+		2A05E5EB1BB9A92000211A5A /* FastTabla.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2A05E5E91BB9A92000211A5A /* FastTabla.xcdatamodeld */; };
+		2A05E5F11BB9A92000211A5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A05E5EF1BB9A92000211A5A /* Main.storyboard */; };
+		2A05E5F31BB9A92000211A5A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A05E5F21BB9A92000211A5A /* Images.xcassets */; };
+		2A05E5F61BB9A92000211A5A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A05E5F41BB9A92000211A5A /* LaunchScreen.xib */; };
+		2A05E6021BB9A92000211A5A /* FastTablaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A05E6011BB9A92000211A5A /* FastTablaTests.m */; };
+		2A05E60E1BB9A99A00211A5A /* Tarea.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A05E60D1BB9A99A00211A5A /* Tarea.m */; };
+		2A05E6111BB9AA5700211A5A /* TareasTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A05E6101BB9AA5700211A5A /* TareasTVC.m */; };
+		2A05E6141BB9AF6700211A5A /* AgregarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A05E6131BB9AF6700211A5A /* AgregarVC.m */; };
+		2A05E6171BB9B28F00211A5A /* EditarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A05E6161BB9B28F00211A5A /* EditarVC.m */; };
+		2A2D30701BBB2A0B00FAD041 /* Tarea+Modelo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D306F1BBB2A0B00FAD041 /* Tarea+Modelo.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2A05E5FC1BB9A92000211A5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A05E5D71BB9A91F00211A5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A05E5DE1BB9A91F00211A5A;
+			remoteInfo = FastTabla;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2A05E5DF1BB9A91F00211A5A /* FastTabla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastTabla.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A05E5E31BB9A92000211A5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A05E5E41BB9A92000211A5A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2A05E5E61BB9A92000211A5A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2A05E5E71BB9A92000211A5A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2A05E5EA1BB9A92000211A5A /* FastTabla.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FastTabla.xcdatamodel; sourceTree = "<group>"; };
+		2A05E5F01BB9A92000211A5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2A05E5F21BB9A92000211A5A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2A05E5F51BB9A92000211A5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		2A05E5FB1BB9A92000211A5A /* FastTablaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastTablaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A05E6001BB9A92000211A5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A05E6011BB9A92000211A5A /* FastTablaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FastTablaTests.m; sourceTree = "<group>"; };
+		2A05E60C1BB9A99A00211A5A /* Tarea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tarea.h; sourceTree = "<group>"; };
+		2A05E60D1BB9A99A00211A5A /* Tarea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tarea.m; sourceTree = "<group>"; };
+		2A05E60F1BB9AA5700211A5A /* TareasTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TareasTVC.h; sourceTree = "<group>"; };
+		2A05E6101BB9AA5700211A5A /* TareasTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TareasTVC.m; sourceTree = "<group>"; };
+		2A05E6121BB9AF6700211A5A /* AgregarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgregarVC.h; sourceTree = "<group>"; };
+		2A05E6131BB9AF6700211A5A /* AgregarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgregarVC.m; sourceTree = "<group>"; };
+		2A05E6151BB9B28F00211A5A /* EditarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditarVC.h; sourceTree = "<group>"; };
+		2A05E6161BB9B28F00211A5A /* EditarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditarVC.m; sourceTree = "<group>"; };
+		2A2D306E1BBB2A0B00FAD041 /* Tarea+Modelo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Tarea+Modelo.h"; sourceTree = "<group>"; };
+		2A2D306F1BBB2A0B00FAD041 /* Tarea+Modelo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Tarea+Modelo.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A05E5DC1BB9A91F00211A5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A05E5F81BB9A92000211A5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A05E5D61BB9A91F00211A5A = {
+			isa = PBXGroup;
+			children = (
+				2A05E5E11BB9A91F00211A5A /* FastTabla */,
+				2A05E5FE1BB9A92000211A5A /* FastTablaTests */,
+				2A05E5E01BB9A91F00211A5A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2A05E5E01BB9A91F00211A5A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A05E5DF1BB9A91F00211A5A /* FastTabla.app */,
+				2A05E5FB1BB9A92000211A5A /* FastTablaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A05E5E11BB9A91F00211A5A /* FastTabla */ = {
+			isa = PBXGroup;
+			children = (
+				2A05E5E21BB9A91F00211A5A /* Supporting Files */,
+				2A05E60B1BB9A93F00211A5A /* DB y models */,
+				2A05E5E61BB9A92000211A5A /* AppDelegate.h */,
+				2A05E5E71BB9A92000211A5A /* AppDelegate.m */,
+				2A05E6151BB9B28F00211A5A /* EditarVC.h */,
+				2A05E6161BB9B28F00211A5A /* EditarVC.m */,
+				2A05E60F1BB9AA5700211A5A /* TareasTVC.h */,
+				2A05E6101BB9AA5700211A5A /* TareasTVC.m */,
+				2A05E5EF1BB9A92000211A5A /* Main.storyboard */,
+				2A05E6121BB9AF6700211A5A /* AgregarVC.h */,
+				2A05E6131BB9AF6700211A5A /* AgregarVC.m */,
+			);
+			path = FastTabla;
+			sourceTree = "<group>";
+		};
+		2A05E5E21BB9A91F00211A5A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2A05E5F21BB9A92000211A5A /* Images.xcassets */,
+				2A05E5F41BB9A92000211A5A /* LaunchScreen.xib */,
+				2A05E5E31BB9A92000211A5A /* Info.plist */,
+				2A05E5E41BB9A92000211A5A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2A05E5FE1BB9A92000211A5A /* FastTablaTests */ = {
+			isa = PBXGroup;
+			children = (
+				2A05E6011BB9A92000211A5A /* FastTablaTests.m */,
+				2A05E5FF1BB9A92000211A5A /* Supporting Files */,
+			);
+			path = FastTablaTests;
+			sourceTree = "<group>";
+		};
+		2A05E5FF1BB9A92000211A5A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2A05E6001BB9A92000211A5A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2A05E60B1BB9A93F00211A5A /* DB y models */ = {
+			isa = PBXGroup;
+			children = (
+				2A05E5E91BB9A92000211A5A /* FastTabla.xcdatamodeld */,
+				2A2D306E1BBB2A0B00FAD041 /* Tarea+Modelo.h */,
+				2A2D306F1BBB2A0B00FAD041 /* Tarea+Modelo.m */,
+				2A05E60C1BB9A99A00211A5A /* Tarea.h */,
+				2A05E60D1BB9A99A00211A5A /* Tarea.m */,
+			);
+			name = "DB y models";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2A05E5DE1BB9A91F00211A5A /* FastTabla */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A05E6051BB9A92000211A5A /* Build configuration list for PBXNativeTarget "FastTabla" */;
+			buildPhases = (
+				2A05E5DB1BB9A91F00211A5A /* Sources */,
+				2A05E5DC1BB9A91F00211A5A /* Frameworks */,
+				2A05E5DD1BB9A91F00211A5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FastTabla;
+			productName = FastTabla;
+			productReference = 2A05E5DF1BB9A91F00211A5A /* FastTabla.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2A05E5FA1BB9A92000211A5A /* FastTablaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A05E6081BB9A92000211A5A /* Build configuration list for PBXNativeTarget "FastTablaTests" */;
+			buildPhases = (
+				2A05E5F71BB9A92000211A5A /* Sources */,
+				2A05E5F81BB9A92000211A5A /* Frameworks */,
+				2A05E5F91BB9A92000211A5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A05E5FD1BB9A92000211A5A /* PBXTargetDependency */,
+			);
+			name = FastTablaTests;
+			productName = FastTablaTests;
+			productReference = 2A05E5FB1BB9A92000211A5A /* FastTablaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A05E5D71BB9A91F00211A5A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Carlos Peralta";
+				TargetAttributes = {
+					2A05E5DE1BB9A91F00211A5A = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					2A05E5FA1BB9A92000211A5A = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 2A05E5DE1BB9A91F00211A5A;
+					};
+				};
+			};
+			buildConfigurationList = 2A05E5DA1BB9A91F00211A5A /* Build configuration list for PBXProject "FastTabla" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2A05E5D61BB9A91F00211A5A;
+			productRefGroup = 2A05E5E01BB9A91F00211A5A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A05E5DE1BB9A91F00211A5A /* FastTabla */,
+				2A05E5FA1BB9A92000211A5A /* FastTablaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A05E5DD1BB9A91F00211A5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A05E5F11BB9A92000211A5A /* Main.storyboard in Resources */,
+				2A05E5F61BB9A92000211A5A /* LaunchScreen.xib in Resources */,
+				2A05E5F31BB9A92000211A5A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A05E5F91BB9A92000211A5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A05E5DB1BB9A91F00211A5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A05E5E81BB9A92000211A5A /* AppDelegate.m in Sources */,
+				2A2D30701BBB2A0B00FAD041 /* Tarea+Modelo.m in Sources */,
+				2A05E5EB1BB9A92000211A5A /* FastTabla.xcdatamodeld in Sources */,
+				2A05E6171BB9B28F00211A5A /* EditarVC.m in Sources */,
+				2A05E6141BB9AF6700211A5A /* AgregarVC.m in Sources */,
+				2A05E6111BB9AA5700211A5A /* TareasTVC.m in Sources */,
+				2A05E5E51BB9A92000211A5A /* main.m in Sources */,
+				2A05E60E1BB9A99A00211A5A /* Tarea.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A05E5F71BB9A92000211A5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A05E6021BB9A92000211A5A /* FastTablaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2A05E5FD1BB9A92000211A5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A05E5DE1BB9A91F00211A5A /* FastTabla */;
+			targetProxy = 2A05E5FC1BB9A92000211A5A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2A05E5EF1BB9A92000211A5A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A05E5F01BB9A92000211A5A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2A05E5F41BB9A92000211A5A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A05E5F51BB9A92000211A5A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2A05E6031BB9A92000211A5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2A05E6041BB9A92000211A5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2A05E6061BB9A92000211A5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FastTabla/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2A05E6071BB9A92000211A5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FastTabla/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2A05E6091BB9A92000211A5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FastTablaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FastTabla.app/FastTabla";
+			};
+			name = Debug;
+		};
+		2A05E60A1BB9A92000211A5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FastTablaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FastTabla.app/FastTabla";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A05E5DA1BB9A91F00211A5A /* Build configuration list for PBXProject "FastTabla" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A05E6031BB9A92000211A5A /* Debug */,
+				2A05E6041BB9A92000211A5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A05E6051BB9A92000211A5A /* Build configuration list for PBXNativeTarget "FastTabla" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A05E6061BB9A92000211A5A /* Debug */,
+				2A05E6071BB9A92000211A5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A05E6081BB9A92000211A5A /* Build configuration list for PBXNativeTarget "FastTablaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A05E6091BB9A92000211A5A /* Debug */,
+				2A05E60A1BB9A92000211A5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2A05E5E91BB9A92000211A5A /* FastTabla.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2A05E5EA1BB9A92000211A5A /* FastTabla.xcdatamodel */,
+			);
+			currentVersion = 2A05E5EA1BB9A92000211A5A /* FastTabla.xcdatamodel */;
+			path = FastTabla.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2A05E5D71BB9A91F00211A5A /* Project object */;
+}
