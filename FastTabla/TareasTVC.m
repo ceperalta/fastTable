@@ -16,12 +16,24 @@
 #define ROWS_BATCH_REQUEST 20
 
 @interface TareasTVC () <UISearchBarDelegate, NSFetchedResultsControllerDelegate>
-@property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
-@property (assign) BOOL yaIniciadoB;
+
+
+@property (weak, nonatomic) IBOutlet UISearchBar *searchBarComplete;
 @property (strong,nonatomic)NSSortDescriptor *nsSortDescriptor;
 @end
 
 @implementation TareasTVC
+
+
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar{
+    [self cleanSearchBarAndHideKeyboard];
+    [self searchInDbWithThisText:@""];
+}
+
+-(void) cleanSearchBarAndHideKeyboard{
+    self.searchBarComplete.text = @"";
+    [self.searchBarComplete resignFirstResponder];
+}
 
 -(void)dealloc{
     NSLog(@"%s",__FUNCTION__);
@@ -39,13 +51,18 @@
 
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText{
     NSLog(@"%s",__FUNCTION__);
+    [self searchInDbWithThisText:searchText];
+}
+
+-(void) searchInDbWithThisText:(NSString*)text{
+    NSLog(@"%s",__FUNCTION__);
     
     AppDelegate *app = (AppDelegate*)[[UIApplication sharedApplication] delegate];
     
     self.fetchedResultsController.delegate = nil;
     self.fetchedResultsController = nil;
- 
-    NSFetchRequest *fetchRequestFiltrado = [Tarea filtrar_texto:searchText];
+    
+    NSFetchRequest *fetchRequestFiltrado = [Tarea filtrar_texto:text];
     
     [fetchRequestFiltrado setSortDescriptors:@[_nsSortDescriptor]];
     [fetchRequestFiltrado setFetchBatchSize:ROWS_BATCH_REQUEST];
@@ -56,7 +73,6 @@
     
     
     [self.tableView reloadData];
-
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
@@ -73,12 +89,12 @@
 - (IBAction)refreshTable:(id)sender {
     NSLog(@"%s",__FUNCTION__);
     [self updateTasksFromDB];
-    self.searchBar.text = @"";
+    [self cleanSearchBarAndHideKeyboard];
     
     [self.tableView reloadData];
     [self.refreshControl endRefreshing];
     
-    [self.tableView setContentOffset:CGPointMake(0, -20) animated:YES];
+   
 }
 
 - (void)updateTasksFromDB{
@@ -107,16 +123,14 @@
     NSLog(@"%s",__FUNCTION__);
     [self updateTasksFromDB];
     [self.tableView reloadData];
-    if(!_yaIniciadoB){
-        [self.tableView setContentOffset:CGPointMake(0, 44) animated:NO];
-        _yaIniciadoB = true;
-    }
+   
 }
+
+
 
 - (void)viewDidLoad {
     NSLog(@"%s",__FUNCTION__);
     [super viewDidLoad];
-    _yaIniciadoB = false;
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -124,7 +138,9 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    self.searchBar.delegate = self;
+    self.searchBarComplete.delegate = self;
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -251,5 +267,7 @@
     // The fetch controller has sent all current change notifications, so tell the table view to process all updates.
     [self.tableView endUpdates];
 }
+
+
 
 @end
