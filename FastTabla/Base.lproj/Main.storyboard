@@ -27,7 +27,7 @@
                             </connections>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MiCelda" textLabel="XBS-rh-gaQ" style="IBUITableViewCellStyleDefault" id="HS4-gi-q4G">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MiCelda" textLabel="XBS-rh-gaQ" detailTextLabel="5yI-l9-MfH" style="IBUITableViewCellStyleSubtitle" id="HS4-gi-q4G">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HS4-gi-q4G" id="D6h-nM-Hn6">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -35,8 +35,17 @@
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XBS-rh-gaQ">
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5yI-l9-MfH">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="widthClass=compact">
+                                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            </variation>
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
@@ -100,14 +109,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CEh-7N-0ki">
-                                <rect key="frame" x="155" y="285" width="290" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="290" id="vel-qy-bx3"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qb5-J9-7vX">
                                 <rect key="frame" x="277" y="323" width="46" height="30"/>
                                 <state key="normal" title="Agregar">
@@ -117,22 +118,56 @@
                                     <action selector="agregarTareasBTN_press:" destination="zSN-IQ-Ibm" eventType="touchUpInside" id="dAV-G7-iIh"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Descripción" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7XE-A0-aLr">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Título" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CEh-7N-0ki">
+                                <rect key="frame" x="155" y="285" width="290" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="290" id="vel-qy-bx3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="CEh-7N-0ki" firstAttribute="centerX" secondItem="Fjt-Lo-WKE" secondAttribute="centerX" id="2kx-Ep-EM7"/>
-                            <constraint firstItem="CEh-7N-0ki" firstAttribute="centerY" secondItem="Fjt-Lo-WKE" secondAttribute="centerY" id="Aju-dQ-qWI"/>
+                            <constraint firstItem="CEh-7N-0ki" firstAttribute="centerY" secondItem="Fjt-Lo-WKE" secondAttribute="centerY" id="Aju-dQ-qWI">
+                                <variation key="widthClass=compact" constant="-38"/>
+                            </constraint>
                             <constraint firstItem="Qb5-J9-7vX" firstAttribute="centerX" secondItem="CEh-7N-0ki" secondAttribute="centerX" id="EoA-Zg-LdI"/>
-                            <constraint firstItem="Qb5-J9-7vX" firstAttribute="top" secondItem="CEh-7N-0ki" secondAttribute="bottom" constant="8" symbolic="YES" id="WDk-Ha-IAu"/>
+                            <constraint firstItem="Qb5-J9-7vX" firstAttribute="top" secondItem="CEh-7N-0ki" secondAttribute="bottom" constant="8" symbolic="YES" id="WDk-Ha-IAu">
+                                <variation key="widthClass=compact" constant="46"/>
+                            </constraint>
+                            <constraint firstItem="7XE-A0-aLr" firstAttribute="trailing" secondItem="CEh-7N-0ki" secondAttribute="trailing" id="muN-6u-l6h"/>
+                            <constraint firstItem="7XE-A0-aLr" firstAttribute="leading" secondItem="CEh-7N-0ki" secondAttribute="leading" id="sDb-2h-9zU"/>
+                            <constraint firstItem="CEh-7N-0ki" firstAttribute="top" secondItem="7XE-A0-aLr" secondAttribute="bottom" constant="8" symbolic="YES" id="say-U1-Z1z">
+                                <variation key="widthClass=compact" constant="-68"/>
+                            </constraint>
                         </constraints>
                         <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="7XE-A0-aLr"/>
+                            </mask>
                             <mask key="constraints">
+                                <exclude reference="muN-6u-l6h"/>
+                                <exclude reference="sDb-2h-9zU"/>
+                                <exclude reference="say-U1-Z1z"/>
                                 <exclude reference="EoA-Zg-LdI"/>
                                 <exclude reference="WDk-Ha-IAu"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="7XE-A0-aLr"/>
+                            </mask>
                             <mask key="constraints">
+                                <include reference="muN-6u-l6h"/>
+                                <include reference="sDb-2h-9zU"/>
+                                <include reference="say-U1-Z1z"/>
                                 <include reference="EoA-Zg-LdI"/>
                                 <include reference="WDk-Ha-IAu"/>
                             </mask>
@@ -140,6 +175,7 @@
                     </view>
                     <connections>
                         <outlet property="agregarTF" destination="CEh-7N-0ki" id="kPT-KA-4QB"/>
+                        <outlet property="descripcionTF" destination="7XE-A0-aLr" id="WM3-nV-wjt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Gm-pz-bkd" userLabel="First Responder" sceneMemberID="firstResponder"/>

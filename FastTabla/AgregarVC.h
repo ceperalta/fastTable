@@ -10,5 +10,6 @@
 
 @interface AgregarVC : UIViewController
 @property (weak, nonatomic) IBOutlet UITextField *agregarTF;
+@property (weak, nonatomic) IBOutlet UITextField *descripcionTF;
 
 @end

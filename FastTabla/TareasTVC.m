@@ -153,6 +153,7 @@
     NSLog(@"%s",__FUNCTION__);
     Tarea *t = (Tarea*)[self.fetchedResultsController objectAtIndexPath:indexPath];
     celda.textLabel.text = t.texto;
+    celda.detailTextLabel.text = t.descripcion;
 }
 
 #pragma mark - Table view data source

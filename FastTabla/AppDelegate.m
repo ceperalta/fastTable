@@ -65,6 +65,64 @@
     return _managedObjectModel;
 }
 
+/*
+ 
+ 
+ ------------------------------------
+ 
+ 
+ https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/CoreDataVersioning/Articles/vmInitiating.html#//apple_ref/doc/uid/TP40004399-CH7-SW1
+ 
+ The Default Migration Process
+ 
+ To open a store and perform migration (if necessary), you use addPersistentStoreWithType:configuration:URL:options:error: and add to the options dictionary an entry where the key is NSMigratePersistentStoresAutomaticallyOption and the value is an NSNumber object that represents YES. Your code looks similar to the following example:
+ 
+ Listing 6-1  Opening a store using automatic migration
+ NSError *error;
+ NSPersistentStoreCoordinator *psc = <#The coordinator#>;
+ NSURL *storeURL = <#The URL of a persistent store#>;
+ NSDictionary *optionsDictionary =
+ [NSDictionary dictionaryWithObject:[NSNumber numberWithBool:YES]
+ forKey:NSMigratePersistentStoresAutomaticallyOption];
+ 
+ NSPersistentStore *store = [psc addPersistentStoreWithType:<#Store type#>
+ configuration:<#Configuration or nil#>
+ URL:storeURL
+ options:optionsDictionary
+ error:&error];
+ If the migration proceeds successfully, the existing store at storeURL is renamed with a “~” suffix before any file extension and the migrated store saved to storeURL.
+ 
+ In its implementation of addPersistentStoreWithType:configuration:URL:options:error: Core Data does the following:
+ 
+ Tries to find a managed object model that it can use to open the store.
+ Core Data searches through your application’s resources for models and tests each in turn. If it cannot find a suitable model, Core Data returns nil and a suitable error.
+ 
+ Tries to find a mapping model that maps from the managed object model for the existing store to that in use by the persistent store coordinator.
+ Core Data searches through your application’s resources for available mapping models and tests each in turn. If it cannot find a suitable mapping, Core Data returns NO and a suitable error.
+ 
+ Note that you must have created a suitable mapping model in order for this phase to succeed.
+ 
+ Creates instances of the migration policy objects required by the mapping model.
+ Note that even if you use the default migration process you can customize the migration itself using custom migration policy classes.
+ 
+ 
+ Lightweight Migration Core Data in Swift - Xcode 6 iOS 8 Tutorial:
+ https://www.youtube.com/watch?v=HXDdYtKtwEc
+ 
+ 
+ +
+ 
+ NSDictionary *options = @{NSMigratePersistentStoresAutomaticallyOption:@YES,
+ NSInferMappingModelAutomaticallyOption:@YES};
+ 
+ NSString *failureReason = @"There was an error creating or loading the application's saved data.";
+ if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:options error:&error]) {
+ 
+ 
+ ----------------------------------------------------
+ 
+ */
+
 - (NSPersistentStoreCoordinator *)persistentStoreCoordinator {
     // The persistent store coordinator for the application. This implementation creates and return a coordinator, having added the store for the application to it.
     if (_persistentStoreCoordinator != nil) {
@@ -76,8 +134,12 @@
     _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
     NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"FastTabla.sqlite"];
     NSError *error = nil;
+    
+    NSDictionary *options = @{NSMigratePersistentStoresAutomaticallyOption:@YES,
+                              NSInferMappingModelAutomaticallyOption:@YES};
+    
     NSString *failureReason = @"There was an error creating or loading the application's saved data.";
-    if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error]) {
+    if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:options error:&error]) {
         // Report any error we got.
         NSMutableDictionary *dict = [NSMutableDictionary dictionary];
         dict[NSLocalizedDescriptionKey] = @"Failed to initialize the application's saved data";

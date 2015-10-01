@@ -2,7 +2,7 @@
 //  Tarea.h
 //  FastTabla
 //
-//  Created by Carlos Peralta on 28/9/15.
+//  Created by Carlos Peralta on 1/10/15.
 //  Copyright (c) 2015 Carlos Peralta. All rights reserved.
 //
 
@@ -13,5 +13,6 @@
 @interface Tarea : NSManagedObject
 
 @property (nonatomic, retain) NSString * texto;
+@property (nonatomic, retain) NSString * descripcion;
 
 @end

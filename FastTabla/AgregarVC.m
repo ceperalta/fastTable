@@ -33,6 +33,7 @@
     
     Tarea *tarea = [NSEntityDescription insertNewObjectForEntityForName:@"Tarea" inManagedObjectContext:app.managedObjectContext];
     tarea.texto = self.agregarTF.text;
+    tarea.descripcion = self.descripcionTF.text;
     [app.managedObjectContext save:nil];
     
     [self.navigationController popViewControllerAnimated:YES];

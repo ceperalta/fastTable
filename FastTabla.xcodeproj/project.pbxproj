@@ -14,12 +14,12 @@
 		2A05E5F31BB9A92000211A5A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A05E5F21BB9A92000211A5A /* Images.xcassets */; };
 		2A05E5F61BB9A92000211A5A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A05E5F41BB9A92000211A5A /* LaunchScreen.xib */; };
 		2A05E6021BB9A92000211A5A /* FastTablaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A05E6011BB9A92000211A5A /* FastTablaTests.m */; };
-		2A05E60E1BB9A99A00211A5A /* Tarea.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A05E60D1BB9A99A00211A5A /* Tarea.m */; };
 		2A05E6111BB9AA5700211A5A /* TareasTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A05E6101BB9AA5700211A5A /* TareasTVC.m */; };
 		2A05E6141BB9AF6700211A5A /* AgregarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A05E6131BB9AF6700211A5A /* AgregarVC.m */; };
 		2A05E6171BB9B28F00211A5A /* EditarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A05E6161BB9B28F00211A5A /* EditarVC.m */; };
 		2A2D30701BBB2A0B00FAD041 /* Tarea+Modelo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D306F1BBB2A0B00FAD041 /* Tarea+Modelo.m */; };
 		2A556B571BBC748E00C4C1ED /* LongFromVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A556B561BBC748E00C4C1ED /* LongFromVC.m */; };
+		2A556B5E1BBD732A00C4C1ED /* Tarea.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A556B5D1BBD732A00C4C1ED /* Tarea.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,8 +45,6 @@
 		2A05E5FB1BB9A92000211A5A /* FastTablaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastTablaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A05E6001BB9A92000211A5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A05E6011BB9A92000211A5A /* FastTablaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FastTablaTests.m; sourceTree = "<group>"; };
-		2A05E60C1BB9A99A00211A5A /* Tarea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tarea.h; sourceTree = "<group>"; };
-		2A05E60D1BB9A99A00211A5A /* Tarea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tarea.m; sourceTree = "<group>"; };
 		2A05E60F1BB9AA5700211A5A /* TareasTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TareasTVC.h; sourceTree = "<group>"; };
 		2A05E6101BB9AA5700211A5A /* TareasTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TareasTVC.m; sourceTree = "<group>"; };
 		2A05E6121BB9AF6700211A5A /* AgregarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgregarVC.h; sourceTree = "<group>"; };
@@ -57,6 +55,9 @@
 		2A2D306F1BBB2A0B00FAD041 /* Tarea+Modelo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Tarea+Modelo.m"; sourceTree = "<group>"; };
 		2A556B551BBC748E00C4C1ED /* LongFromVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LongFromVC.h; path = ../LongFromVC.h; sourceTree = "<group>"; };
 		2A556B561BBC748E00C4C1ED /* LongFromVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LongFromVC.m; path = ../LongFromVC.m; sourceTree = "<group>"; };
+		2A556B581BBD686400C4C1ED /* FastTabla 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "FastTabla 2.xcdatamodel"; sourceTree = "<group>"; };
+		2A556B5C1BBD732A00C4C1ED /* Tarea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tarea.h; path = ../Tarea.h; sourceTree = "<group>"; };
+		2A556B5D1BBD732A00C4C1ED /* Tarea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tarea.m; path = ../Tarea.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,8 +150,8 @@
 				2A05E5E91BB9A92000211A5A /* FastTabla.xcdatamodeld */,
 				2A2D306E1BBB2A0B00FAD041 /* Tarea+Modelo.h */,
 				2A2D306F1BBB2A0B00FAD041 /* Tarea+Modelo.m */,
-				2A05E60C1BB9A99A00211A5A /* Tarea.h */,
-				2A05E60D1BB9A99A00211A5A /* Tarea.m */,
+				2A556B5C1BBD732A00C4C1ED /* Tarea.h */,
+				2A556B5D1BBD732A00C4C1ED /* Tarea.m */,
 			);
 			name = "DB y models";
 			sourceTree = "<group>";
@@ -258,12 +259,12 @@
 				2A05E5E81BB9A92000211A5A /* AppDelegate.m in Sources */,
 				2A2D30701BBB2A0B00FAD041 /* Tarea+Modelo.m in Sources */,
 				2A05E5EB1BB9A92000211A5A /* FastTabla.xcdatamodeld in Sources */,
+				2A556B5E1BBD732A00C4C1ED /* Tarea.m in Sources */,
 				2A05E6171BB9B28F00211A5A /* EditarVC.m in Sources */,
 				2A05E6141BB9AF6700211A5A /* AgregarVC.m in Sources */,
 				2A05E6111BB9AA5700211A5A /* TareasTVC.m in Sources */,
 				2A05E5E51BB9A92000211A5A /* main.m in Sources */,
 				2A556B571BBC748E00C4C1ED /* LongFromVC.m in Sources */,
-				2A05E60E1BB9A99A00211A5A /* Tarea.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,9 +478,10 @@
 		2A05E5E91BB9A92000211A5A /* FastTabla.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				2A556B581BBD686400C4C1ED /* FastTabla 2.xcdatamodel */,
 				2A05E5EA1BB9A92000211A5A /* FastTabla.xcdatamodel */,
 			);
-			currentVersion = 2A05E5EA1BB9A92000211A5A /* FastTabla.xcdatamodel */;
+			currentVersion = 2A556B581BBD686400C4C1ED /* FastTabla 2.xcdatamodel */;
 			path = FastTabla.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
