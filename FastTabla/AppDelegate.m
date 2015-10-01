@@ -146,7 +146,8 @@
     NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"FastTabla.sqlite"];
     NSError *error = nil;
     
-    NSDictionary *options = @{NSMigratePersistentStoresAutomaticallyOption:@YES};//,                           NSInferMappingModelAutomaticallyOption:@NO};
+    NSDictionary *options = @{NSMigratePersistentStoresAutomaticallyOption:@YES,
+                              NSInferMappingModelAutomaticallyOption:@YES};
     
     NSString *failureReason = @"There was an error creating or loading the application's saved data.";
     if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:options error:&error]) {
