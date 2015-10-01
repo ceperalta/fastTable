@@ -19,7 +19,9 @@
 		2A05E6171BB9B28F00211A5A /* EditarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A05E6161BB9B28F00211A5A /* EditarVC.m */; };
 		2A2D30701BBB2A0B00FAD041 /* Tarea+Modelo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D306F1BBB2A0B00FAD041 /* Tarea+Modelo.m */; };
 		2A556B571BBC748E00C4C1ED /* LongFromVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A556B561BBC748E00C4C1ED /* LongFromVC.m */; };
-		2A556B5E1BBD732A00C4C1ED /* Tarea.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A556B5D1BBD732A00C4C1ED /* Tarea.m */; };
+		2A556B771BBD8E1800C4C1ED /* MiNSEntityMigrationPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A556B761BBD8E1800C4C1ED /* MiNSEntityMigrationPolicy.m */; };
+		2A556B8B1BBDAB0600C4C1ED /* Tarea.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A556B8A1BBDAB0600C4C1ED /* Tarea.m */; };
+		2A556B941BBDAF9C00C4C1ED /* Model.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 2A556B931BBDAF9C00C4C1ED /* Model.xcmappingmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,8 +58,22 @@
 		2A556B551BBC748E00C4C1ED /* LongFromVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LongFromVC.h; path = ../LongFromVC.h; sourceTree = "<group>"; };
 		2A556B561BBC748E00C4C1ED /* LongFromVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LongFromVC.m; path = ../LongFromVC.m; sourceTree = "<group>"; };
 		2A556B581BBD686400C4C1ED /* FastTabla 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "FastTabla 2.xcdatamodel"; sourceTree = "<group>"; };
-		2A556B5C1BBD732A00C4C1ED /* Tarea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tarea.h; path = ../Tarea.h; sourceTree = "<group>"; };
-		2A556B5D1BBD732A00C4C1ED /* Tarea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tarea.m; path = ../Tarea.m; sourceTree = "<group>"; };
+		2A556B5F1BBD829D00C4C1ED /* FastTabla 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "FastTabla 3.xcdatamodel"; sourceTree = "<group>"; };
+		2A556B6C1BBD868500C4C1ED /* FastTabla 4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "FastTabla 4.xcdatamodel"; sourceTree = "<group>"; };
+		2A556B721BBD87DF00C4C1ED /* FastTabla 5.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "FastTabla 5.xcdatamodel"; sourceTree = "<group>"; };
+		2A556B751BBD8E1800C4C1ED /* MiNSEntityMigrationPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiNSEntityMigrationPolicy.h; sourceTree = "<group>"; };
+		2A556B761BBD8E1800C4C1ED /* MiNSEntityMigrationPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiNSEntityMigrationPolicy.m; sourceTree = "<group>"; };
+		2A556B781BBD8EB000C4C1ED /* FastTabla 6.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "FastTabla 6.xcdatamodel"; sourceTree = "<group>"; };
+		2A556B7B1BBD902000C4C1ED /* FastTabla 7.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "FastTabla 7.xcdatamodel"; sourceTree = "<group>"; };
+		2A556B7E1BBDA51400C4C1ED /* FastTabla 8.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "FastTabla 8.xcdatamodel"; sourceTree = "<group>"; };
+		2A556B811BBDA91900C4C1ED /* FastTabla 9.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "FastTabla 9.xcdatamodel"; sourceTree = "<group>"; };
+		2A556B841BBDA9F900C4C1ED /* FastTabla 10.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "FastTabla 10.xcdatamodel"; sourceTree = "<group>"; };
+		2A556B891BBDAB0600C4C1ED /* Tarea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tarea.h; path = ../Tarea.h; sourceTree = "<group>"; };
+		2A556B8A1BBDAB0600C4C1ED /* Tarea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tarea.m; path = ../Tarea.m; sourceTree = "<group>"; };
+		2A556B8C1BBDABD900C4C1ED /* FastTabla 11.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "FastTabla 11.xcdatamodel"; sourceTree = "<group>"; };
+		2A556B8F1BBDACB100C4C1ED /* FastTabla 12.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "FastTabla 12.xcdatamodel"; sourceTree = "<group>"; };
+		2A556B921BBDAF9000C4C1ED /* FastTabla 13.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "FastTabla 13.xcdatamodel"; sourceTree = "<group>"; };
+		2A556B931BBDAF9C00C4C1ED /* Model.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = Model.xcmappingmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +117,8 @@
 			children = (
 				2A05E5E21BB9A91F00211A5A /* Supporting Files */,
 				2A05E60B1BB9A93F00211A5A /* DB y models */,
+				2A556B751BBD8E1800C4C1ED /* MiNSEntityMigrationPolicy.h */,
+				2A556B761BBD8E1800C4C1ED /* MiNSEntityMigrationPolicy.m */,
 				2A556B551BBC748E00C4C1ED /* LongFromVC.h */,
 				2A556B561BBC748E00C4C1ED /* LongFromVC.m */,
 				2A05E5E61BB9A92000211A5A /* AppDelegate.h */,
@@ -148,10 +166,11 @@
 			isa = PBXGroup;
 			children = (
 				2A05E5E91BB9A92000211A5A /* FastTabla.xcdatamodeld */,
+				2A556B931BBDAF9C00C4C1ED /* Model.xcmappingmodel */,
+				2A556B891BBDAB0600C4C1ED /* Tarea.h */,
+				2A556B8A1BBDAB0600C4C1ED /* Tarea.m */,
 				2A2D306E1BBB2A0B00FAD041 /* Tarea+Modelo.h */,
 				2A2D306F1BBB2A0B00FAD041 /* Tarea+Modelo.m */,
-				2A556B5C1BBD732A00C4C1ED /* Tarea.h */,
-				2A556B5D1BBD732A00C4C1ED /* Tarea.m */,
 			);
 			name = "DB y models";
 			sourceTree = "<group>";
@@ -259,12 +278,14 @@
 				2A05E5E81BB9A92000211A5A /* AppDelegate.m in Sources */,
 				2A2D30701BBB2A0B00FAD041 /* Tarea+Modelo.m in Sources */,
 				2A05E5EB1BB9A92000211A5A /* FastTabla.xcdatamodeld in Sources */,
-				2A556B5E1BBD732A00C4C1ED /* Tarea.m in Sources */,
 				2A05E6171BB9B28F00211A5A /* EditarVC.m in Sources */,
 				2A05E6141BB9AF6700211A5A /* AgregarVC.m in Sources */,
 				2A05E6111BB9AA5700211A5A /* TareasTVC.m in Sources */,
 				2A05E5E51BB9A92000211A5A /* main.m in Sources */,
+				2A556B8B1BBDAB0600C4C1ED /* Tarea.m in Sources */,
+				2A556B941BBDAF9C00C4C1ED /* Model.xcmappingmodel in Sources */,
 				2A556B571BBC748E00C4C1ED /* LongFromVC.m in Sources */,
+				2A556B771BBD8E1800C4C1ED /* MiNSEntityMigrationPolicy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,10 +499,21 @@
 		2A05E5E91BB9A92000211A5A /* FastTabla.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				2A556B921BBDAF9000C4C1ED /* FastTabla 13.xcdatamodel */,
+				2A556B8F1BBDACB100C4C1ED /* FastTabla 12.xcdatamodel */,
+				2A556B8C1BBDABD900C4C1ED /* FastTabla 11.xcdatamodel */,
+				2A556B841BBDA9F900C4C1ED /* FastTabla 10.xcdatamodel */,
+				2A556B811BBDA91900C4C1ED /* FastTabla 9.xcdatamodel */,
+				2A556B7E1BBDA51400C4C1ED /* FastTabla 8.xcdatamodel */,
+				2A556B7B1BBD902000C4C1ED /* FastTabla 7.xcdatamodel */,
+				2A556B781BBD8EB000C4C1ED /* FastTabla 6.xcdatamodel */,
+				2A556B721BBD87DF00C4C1ED /* FastTabla 5.xcdatamodel */,
+				2A556B6C1BBD868500C4C1ED /* FastTabla 4.xcdatamodel */,
+				2A556B5F1BBD829D00C4C1ED /* FastTabla 3.xcdatamodel */,
 				2A556B581BBD686400C4C1ED /* FastTabla 2.xcdatamodel */,
 				2A05E5EA1BB9A92000211A5A /* FastTabla.xcdatamodel */,
 			);
-			currentVersion = 2A556B581BBD686400C4C1ED /* FastTabla 2.xcdatamodel */;
+			currentVersion = 2A556B921BBDAF9000C4C1ED /* FastTabla 13.xcdatamodel */;
 			path = FastTabla.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

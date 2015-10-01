@@ -1,17 +1,13 @@
 //
-//  Tarea.m
+//  MiNSEntityMigrationPolicy.h
 //  FastTabla
 //
 //  Created by Carlos Peralta on 1/10/15.
 //  Copyright (c) 2015 Carlos Peralta. All rights reserved.
 //
 
-#import "Tarea.h"
+#import <CoreData/CoreData.h>
 
-
-@implementation Tarea
-
-@dynamic descripcionMod;
-@dynamic textoMod3;
+@interface MiNSEntityMigrationPolicy : NSEntityMigrationPolicy
 
 @end

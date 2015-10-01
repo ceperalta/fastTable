@@ -12,7 +12,7 @@
 
 @interface Tarea : NSManagedObject
 
-@property (nonatomic, retain) NSString * texto;
-@property (nonatomic, retain) NSString * descripcion;
+@property (nonatomic, retain) NSString * descripcionMod;
+@property (nonatomic, retain) NSString * textoMod3;
 
 @end

@@ -106,7 +106,7 @@
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"Tarea" inManagedObjectContext:app.managedObjectContext];
     [fetch setEntity:entity];
     
-    _nsSortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"texto" ascending:YES];
+    _nsSortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"textoMod3" ascending:YES];
     
     [fetch setSortDescriptors:@[_nsSortDescriptor]];
     
@@ -121,9 +121,6 @@
 
 -(void)viewWillAppear:(BOOL)animated{
     NSLog(@"%s",__FUNCTION__);
-    [self updateTasksFromDB];
-    [self.tableView reloadData];
-   
 }
 
 
@@ -140,6 +137,8 @@
     
     self.searchBarComplete.delegate = self;
     
+    [self updateTasksFromDB];
+    [self.tableView reloadData];
     
 }
 
@@ -152,8 +151,9 @@
 -(void)configurarCelda:(UITableViewCell*)celda enElIndexPath:(NSIndexPath*)indexPath{
     NSLog(@"%s",__FUNCTION__);
     Tarea *t = (Tarea*)[self.fetchedResultsController objectAtIndexPath:indexPath];
-    celda.textLabel.text = t.texto;
-    celda.detailTextLabel.text = t.descripcion;
+    NSLog(@"%@, %@, %@",t,t.textoMod3,t.descripcionMod);
+    celda.textLabel.text = t.textoMod3;
+    celda.detailTextLabel.text = t.descripcionMod;
 }
 
 #pragma mark - Table view data source

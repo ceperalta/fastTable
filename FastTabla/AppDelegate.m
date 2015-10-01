@@ -119,6 +119,17 @@
  if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:options error:&error]) {
  
  
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Complex Migration: mapping model !
+ 
+ Mapping Overview
+ 
+ In many cases, Core Data may be able to infer how to transform data from one schema to another (see Lightweight Migration. If Core Data cannot infer the mapping from one model to another, you need a definition of how to perform the transformation. This information is captured in a mapping model.
+ 
+ A mapping model is a collection of objects that specifies the transformations that are required to migrate part of a store from one version of your model to another (for example, that one entity is renamed, an attribute is added to another, and a third split into two). You typically create a mapping model in Xcode. Much as the managed object model editor allows you to graphically create the model, the mapping model editor allows you to customize the mappings between the source and destination entities and properties.
+ 
+ 
+ Excelent Resource!: http://blog.10to1.be/cocoa/2011/11/28/core-data-versioning/  (LightWeight Migration, mapping model and custom con mapping model!: (to update even data))
+ 
  ----------------------------------------------------
  
  */
@@ -135,8 +146,7 @@
     NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"FastTabla.sqlite"];
     NSError *error = nil;
     
-    NSDictionary *options = @{NSMigratePersistentStoresAutomaticallyOption:@YES,
-                              NSInferMappingModelAutomaticallyOption:@YES};
+    NSDictionary *options = @{NSMigratePersistentStoresAutomaticallyOption:@YES};//,                           NSInferMappingModelAutomaticallyOption:@NO};
     
     NSString *failureReason = @"There was an error creating or loading the application's saved data.";
     if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:options error:&error]) {

@@ -32,8 +32,8 @@
     AppDelegate *app = (AppDelegate*)[[UIApplication sharedApplication] delegate];
     
     Tarea *tarea = [NSEntityDescription insertNewObjectForEntityForName:@"Tarea" inManagedObjectContext:app.managedObjectContext];
-    tarea.texto = self.agregarTF.text;
-    tarea.descripcion = self.descripcionTF.text;
+    tarea.textoMod3 = self.agregarTF.text;
+    tarea.descripcionMod = self.descripcionTF.text;
     [app.managedObjectContext save:nil];
     
     [self.navigationController popViewControllerAnimated:YES];

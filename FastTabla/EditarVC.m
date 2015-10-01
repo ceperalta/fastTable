@@ -39,7 +39,7 @@
     [fetch setPredicate:predicate];
    
     Tarea *tareaAEditarAux = (Tarea*)[[app.managedObjectContext executeFetchRequest:fetch error:nil] objectAtIndex:0];
-    tareaAEditarAux.texto = self.editarTF.text;
+    tareaAEditarAux.textoMod3 = self.editarTF.text;
     
     [app.managedObjectContext save:nil];
     
@@ -48,7 +48,7 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    self.editarTF.text = self.tareaAEditar.texto;
+    self.editarTF.text = self.tareaAEditar.textoMod3;
     
     [super viewWillAppear:animated];
     // register for keyboard notifications

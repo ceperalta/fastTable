@@ -19,7 +19,7 @@
     
     NSEntityDescription *e = [NSEntityDescription entityForName:@"Tarea" inManagedObjectContext:app.managedObjectContext];
     [f setEntity:e];
-    NSPredicate *p = [NSPredicate predicateWithFormat:@"texto like [cd] %@",[NSString stringWithFormat:@"*%@*",textoAFiltrar]];
+    NSPredicate *p = [NSPredicate predicateWithFormat:@"textoMod3 like [cd] %@",[NSString stringWithFormat:@"*%@*",textoAFiltrar]];
     [f setPredicate:p];
     
     /*
