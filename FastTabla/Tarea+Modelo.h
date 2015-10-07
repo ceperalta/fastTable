@@ -11,5 +11,7 @@
 @interface Tarea (Modelo)
 
 +(NSFetchRequest*)filtrar_texto:(NSString*)textoAFiltrar;
++(void)addTaskToBDTaskNNS:(NSString*)taskNNS descriptionNSS:(NSString*)descriptionNSS;
++(Tarea*)getTaskFromDBTask:(Tarea*)task;
 
 @end

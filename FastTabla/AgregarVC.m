@@ -9,6 +9,7 @@
 #import "AgregarVC.h"
 #import "AppDelegate.h"
 #import "Tarea.h"
+#import "Tarea+Modelo.h"
 
 @interface AgregarVC ()
 
@@ -28,14 +29,9 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 - (IBAction)agregarTareasBTN_press:(id)sender {
-    AppDelegate *app = (AppDelegate*)[[UIApplication sharedApplication] delegate];
-    
-    Tarea *tarea = [NSEntityDescription insertNewObjectForEntityForName:@"Tarea" inManagedObjectContext:app.managedObjectContext];
-    tarea.textoMod3 = self.agregarTF.text;
-    tarea.descripcionMod = self.descripcionTF.text;
-    [app.managedObjectContext save:nil];
-    
+    [Tarea addTaskToBDTaskNNS:self.agregarTF.text descriptionNSS:self.descripcionTF.text];
     [self.navigationController popViewControllerAnimated:YES];
 }
 

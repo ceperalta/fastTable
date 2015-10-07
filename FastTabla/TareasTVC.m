@@ -24,7 +24,6 @@
 
 @implementation TareasTVC
 
-
 - (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar{
     [self cleanSearchBarAndHideKeyboard];
     [self searchInDbWithThisText:@""];
@@ -86,6 +85,7 @@
     }
 
 }
+
 - (IBAction)refreshTable:(id)sender {
     NSLog(@"%s",__FUNCTION__);
     [self updateTasksFromDB];
@@ -123,8 +123,6 @@
     NSLog(@"%s",__FUNCTION__);
 }
 
-
-
 - (void)viewDidLoad {
     NSLog(@"%s",__FUNCTION__);
     [super viewDidLoad];
@@ -154,6 +152,7 @@
     NSLog(@"%@, %@, %@",t,t.textoMod3,t.descripcionMod);
     celda.textLabel.text = t.textoMod3;
     celda.detailTextLabel.text = t.descripcionMod;
+    celda.accessibilityIdentifier = t.textoMod3; // For UI Test ;)
 }
 
 #pragma mark - Table view data source

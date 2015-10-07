@@ -30,4 +30,28 @@
     return f;
 }
 
++(void)addTaskToBDTaskNNS:(NSString*)taskNNS descriptionNSS:(NSString*)descriptionNSS{
+    AppDelegate *app = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    
+    Tarea *tarea = [NSEntityDescription insertNewObjectForEntityForName:@"Tarea" inManagedObjectContext:app.managedObjectContext];
+    tarea.textoMod3 = taskNNS;
+    tarea.descripcionMod = descriptionNSS;
+    [app.managedObjectContext save:nil];
+}
+
++(Tarea*)getTaskFromDBTask:(Tarea*)task{
+    AppDelegate *app = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Tarea" inManagedObjectContext:app.managedObjectContext];
+    NSFetchRequest *fetch = [[NSFetchRequest alloc] init];
+    [fetch setEntity:entity];
+    
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"self == %@",task];
+    [fetch setPredicate:predicate];
+    
+    Tarea *taskInDB = (Tarea*)[[app.managedObjectContext executeFetchRequest:fetch error:nil] objectAtIndex:0];
+
+    return taskInDB;
+}
+
 @end

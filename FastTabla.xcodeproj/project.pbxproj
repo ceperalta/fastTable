@@ -13,19 +13,34 @@
 		2A05E5F11BB9A92000211A5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A05E5EF1BB9A92000211A5A /* Main.storyboard */; };
 		2A05E5F31BB9A92000211A5A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A05E5F21BB9A92000211A5A /* Images.xcassets */; };
 		2A05E5F61BB9A92000211A5A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A05E5F41BB9A92000211A5A /* LaunchScreen.xib */; };
-		2A05E6021BB9A92000211A5A /* FastTablaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A05E6011BB9A92000211A5A /* FastTablaTests.m */; };
 		2A05E6111BB9AA5700211A5A /* TareasTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A05E6101BB9AA5700211A5A /* TareasTVC.m */; };
 		2A05E6141BB9AF6700211A5A /* AgregarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A05E6131BB9AF6700211A5A /* AgregarVC.m */; };
 		2A05E6171BB9B28F00211A5A /* EditarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A05E6161BB9B28F00211A5A /* EditarVC.m */; };
+		2A1AAF8B1BC43CB400C2EE10 /* FastTablaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1AAF8A1BC43CB400C2EE10 /* FastTablaUITests.m */; };
 		2A2D30701BBB2A0B00FAD041 /* Tarea+Modelo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D306F1BBB2A0B00FAD041 /* Tarea+Modelo.m */; };
 		2A556B571BBC748E00C4C1ED /* LongFromVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A556B561BBC748E00C4C1ED /* LongFromVC.m */; };
 		2A556B771BBD8E1800C4C1ED /* MiNSEntityMigrationPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A556B761BBD8E1800C4C1ED /* MiNSEntityMigrationPolicy.m */; };
 		2A556B8B1BBDAB0600C4C1ED /* Tarea.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A556B8A1BBDAB0600C4C1ED /* Tarea.m */; };
 		2A556B941BBDAF9C00C4C1ED /* Model.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 2A556B931BBDAF9C00C4C1ED /* Model.xcmappingmodel */; };
+		2A83D8C01BC30B450096C701 /* AgregarVCTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A83D8BF1BC30B450096C701 /* AgregarVCTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		2A05E5FC1BB9A92000211A5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A05E5D71BB9A91F00211A5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A05E5DE1BB9A91F00211A5A;
+			remoteInfo = FastTabla;
+		};
+		2A1AAF8D1BC43CB400C2EE10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A05E5D71BB9A91F00211A5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A05E5DE1BB9A91F00211A5A;
+			remoteInfo = FastTabla;
+		};
+		2A1AAF9B1BC43E4A00C2EE10 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A05E5D71BB9A91F00211A5A /* Project object */;
 			proxyType = 1;
@@ -46,13 +61,16 @@
 		2A05E5F51BB9A92000211A5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		2A05E5FB1BB9A92000211A5A /* FastTablaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastTablaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A05E6001BB9A92000211A5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2A05E6011BB9A92000211A5A /* FastTablaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FastTablaTests.m; sourceTree = "<group>"; };
 		2A05E60F1BB9AA5700211A5A /* TareasTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TareasTVC.h; sourceTree = "<group>"; };
 		2A05E6101BB9AA5700211A5A /* TareasTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TareasTVC.m; sourceTree = "<group>"; };
 		2A05E6121BB9AF6700211A5A /* AgregarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgregarVC.h; sourceTree = "<group>"; };
 		2A05E6131BB9AF6700211A5A /* AgregarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgregarVC.m; sourceTree = "<group>"; };
 		2A05E6151BB9B28F00211A5A /* EditarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditarVC.h; sourceTree = "<group>"; };
 		2A05E6161BB9B28F00211A5A /* EditarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditarVC.m; sourceTree = "<group>"; };
+		2A1AAF881BC43CB400C2EE10 /* FastTablaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastTablaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A1AAF8A1BC43CB400C2EE10 /* FastTablaUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FastTablaUITests.m; sourceTree = "<group>"; };
+		2A1AAF8C1BC43CB400C2EE10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A1AAF961BC43E4A00C2EE10 /* FastTablaTests2.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastTablaTests2.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A2D306E1BBB2A0B00FAD041 /* Tarea+Modelo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Tarea+Modelo.h"; sourceTree = "<group>"; };
 		2A2D306F1BBB2A0B00FAD041 /* Tarea+Modelo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Tarea+Modelo.m"; sourceTree = "<group>"; };
 		2A556B551BBC748E00C4C1ED /* LongFromVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LongFromVC.h; path = ../LongFromVC.h; sourceTree = "<group>"; };
@@ -74,6 +92,7 @@
 		2A556B8F1BBDACB100C4C1ED /* FastTabla 12.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "FastTabla 12.xcdatamodel"; sourceTree = "<group>"; };
 		2A556B921BBDAF9000C4C1ED /* FastTabla 13.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "FastTabla 13.xcdatamodel"; sourceTree = "<group>"; };
 		2A556B931BBDAF9C00C4C1ED /* Model.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = Model.xcmappingmodel; sourceTree = "<group>"; };
+		2A83D8BF1BC30B450096C701 /* AgregarVCTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgregarVCTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +110,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2A1AAF851BC43CB400C2EE10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A1AAF931BC43E4A00C2EE10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -99,6 +132,7 @@
 			children = (
 				2A05E5E11BB9A91F00211A5A /* FastTabla */,
 				2A05E5FE1BB9A92000211A5A /* FastTablaTests */,
+				2A1AAF891BC43CB400C2EE10 /* FastTablaUITests */,
 				2A05E5E01BB9A91F00211A5A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,6 +142,8 @@
 			children = (
 				2A05E5DF1BB9A91F00211A5A /* FastTabla.app */,
 				2A05E5FB1BB9A92000211A5A /* FastTablaTests.xctest */,
+				2A1AAF881BC43CB400C2EE10 /* FastTablaUITests.xctest */,
+				2A1AAF961BC43E4A00C2EE10 /* FastTablaTests2.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -148,8 +184,8 @@
 		2A05E5FE1BB9A92000211A5A /* FastTablaTests */ = {
 			isa = PBXGroup;
 			children = (
-				2A05E6011BB9A92000211A5A /* FastTablaTests.m */,
 				2A05E5FF1BB9A92000211A5A /* Supporting Files */,
+				2A83D8BF1BC30B450096C701 /* AgregarVCTest.m */,
 			);
 			path = FastTablaTests;
 			sourceTree = "<group>";
@@ -173,6 +209,15 @@
 				2A2D306F1BBB2A0B00FAD041 /* Tarea+Modelo.m */,
 			);
 			name = "DB y models";
+			sourceTree = "<group>";
+		};
+		2A1AAF891BC43CB400C2EE10 /* FastTablaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2A1AAF8A1BC43CB400C2EE10 /* FastTablaUITests.m */,
+				2A1AAF8C1BC43CB400C2EE10 /* Info.plist */,
+			);
+			path = FastTablaUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +258,42 @@
 			productReference = 2A05E5FB1BB9A92000211A5A /* FastTablaTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		2A1AAF871BC43CB400C2EE10 /* FastTablaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A1AAF911BC43CB400C2EE10 /* Build configuration list for PBXNativeTarget "FastTablaUITests" */;
+			buildPhases = (
+				2A1AAF841BC43CB400C2EE10 /* Sources */,
+				2A1AAF851BC43CB400C2EE10 /* Frameworks */,
+				2A1AAF861BC43CB400C2EE10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A1AAF8E1BC43CB400C2EE10 /* PBXTargetDependency */,
+			);
+			name = FastTablaUITests;
+			productName = FastTablaUITests;
+			productReference = 2A1AAF881BC43CB400C2EE10 /* FastTablaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		2A1AAF951BC43E4A00C2EE10 /* FastTablaTests2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A1AAF9D1BC43E4A00C2EE10 /* Build configuration list for PBXNativeTarget "FastTablaTests2" */;
+			buildPhases = (
+				2A1AAF921BC43E4A00C2EE10 /* Sources */,
+				2A1AAF931BC43E4A00C2EE10 /* Frameworks */,
+				2A1AAF941BC43E4A00C2EE10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A1AAF9C1BC43E4A00C2EE10 /* PBXTargetDependency */,
+			);
+			name = FastTablaTests2;
+			productName = FastTablaTests2;
+			productReference = 2A1AAF961BC43E4A00C2EE10 /* FastTablaTests2.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -227,6 +308,14 @@
 					};
 					2A05E5FA1BB9A92000211A5A = {
 						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 2A05E5DE1BB9A91F00211A5A;
+					};
+					2A1AAF871BC43CB400C2EE10 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 2A05E5DE1BB9A91F00211A5A;
+					};
+					2A1AAF951BC43E4A00C2EE10 = {
+						CreatedOnToolsVersion = 7.0.1;
 						TestTargetID = 2A05E5DE1BB9A91F00211A5A;
 					};
 				};
@@ -246,6 +335,8 @@
 			targets = (
 				2A05E5DE1BB9A91F00211A5A /* FastTabla */,
 				2A05E5FA1BB9A92000211A5A /* FastTablaTests */,
+				2A1AAF871BC43CB400C2EE10 /* FastTablaUITests */,
+				2A1AAF951BC43E4A00C2EE10 /* FastTablaTests2 */,
 			);
 		};
 /* End PBXProject section */
@@ -262,6 +353,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		2A05E5F91BB9A92000211A5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A1AAF861BC43CB400C2EE10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A1AAF941BC43E4A00C2EE10 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -293,7 +398,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A05E6021BB9A92000211A5A /* FastTablaTests.m in Sources */,
+				2A83D8C01BC30B450096C701 /* AgregarVCTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A1AAF841BC43CB400C2EE10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A1AAF8B1BC43CB400C2EE10 /* FastTablaUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A1AAF921BC43E4A00C2EE10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +424,16 @@
 			isa = PBXTargetDependency;
 			target = 2A05E5DE1BB9A91F00211A5A /* FastTabla */;
 			targetProxy = 2A05E5FC1BB9A92000211A5A /* PBXContainerItemProxy */;
+		};
+		2A1AAF8E1BC43CB400C2EE10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A05E5DE1BB9A91F00211A5A /* FastTabla */;
+			targetProxy = 2A1AAF8D1BC43CB400C2EE10 /* PBXContainerItemProxy */;
+		};
+		2A1AAF9C1BC43E4A00C2EE10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A05E5DE1BB9A91F00211A5A /* FastTabla */;
+			targetProxy = 2A1AAF9B1BC43E4A00C2EE10 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -411,6 +541,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = FastTabla/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -422,6 +553,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = FastTabla/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -463,6 +595,62 @@
 			};
 			name = Release;
 		};
+		2A1AAF8F1BC43CB400C2EE10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = FastTablaUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.ceperalta.FastTablaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FastTabla;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		2A1AAF901BC43CB400C2EE10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FastTablaUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.ceperalta.FastTablaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FastTabla;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+		2A1AAF9E1BC43E4A00C2EE10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = FastTablaTests2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.ceperalta.FastTablaTests2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FastTabla.app/FastTabla";
+			};
+			name = Debug;
+		};
+		2A1AAF9F1BC43E4A00C2EE10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FastTablaTests2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.ceperalta.FastTablaTests2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FastTabla.app/FastTabla";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -492,6 +680,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		2A1AAF911BC43CB400C2EE10 /* Build configuration list for PBXNativeTarget "FastTablaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A1AAF8F1BC43CB400C2EE10 /* Debug */,
+				2A1AAF901BC43CB400C2EE10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2A1AAF9D1BC43E4A00C2EE10 /* Build configuration list for PBXNativeTarget "FastTablaTests2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A1AAF9E1BC43E4A00C2EE10 /* Debug */,
+				2A1AAF9F1BC43E4A00C2EE10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 
