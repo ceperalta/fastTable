@@ -43,8 +43,8 @@ function ejecutar_sql($sql)
 {
 	syslog(LOG_INFO, "ejecutar_sql > ".$sql);
 	//echo $sql;
-	//$con = mysql_connect(':/cloudsql/ceperalta-fast-tabla:db','root','');
-	$con = mysql_connect('localhost:3307','root','contra');
+	$con = mysql_connect(':/cloudsql/ceperalta-fast-tabla:db','root','');
+	//$con = mysql_connect('localhost:3307','root','contra');
 	mysql_select_db('fasttabla');
 	$res = mysql_query($sql,$con);
 	mysql_close($con);
