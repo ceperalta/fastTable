@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -39,14 +38,14 @@
                                             <rect key="frame" x="15" y="1" width="32" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5yI-l9-MfH">
                                             <rect key="frame" x="15" y="21" width="59" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                             <variation key="widthClass=compact">
                                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
@@ -207,7 +206,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Uno:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zcf-vo-6LE">
                                         <rect key="frame" x="20" y="24" width="37" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="egq-4g-lc6">
@@ -340,7 +339,13 @@
                                     <action selector="editButton_press:" destination="CH2-YS-yyH" eventType="touchUpInside" id="dDO-yl-Ebt"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0GK-pC-Hm6">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Descripción" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kid-7r-BQf">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="theDescriptionField"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tarea" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0GK-pC-Hm6">
                                 <rect key="frame" x="20" y="20" width="330" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="nrf-qf-RdR"/>
@@ -361,16 +366,31 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="0GK-pC-Hm6" firstAttribute="leading" secondItem="R6D-R5-33V" secondAttribute="leadingMargin" constant="34" id="4e7-Iy-m8K"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="0GK-pC-Hm6" secondAttribute="trailing" constant="34" id="A0M-ls-tdj"/>
+                            <constraint firstItem="0GK-pC-Hm6" firstAttribute="leading" secondItem="R6D-R5-33V" secondAttribute="leadingMargin" constant="34" id="4e7-Iy-m8K">
+                                <variation key="widthClass=compact" constant="36"/>
+                            </constraint>
+                            <constraint firstAttribute="trailingMargin" secondItem="0GK-pC-Hm6" secondAttribute="trailing" constant="34" id="A0M-ls-tdj">
+                                <variation key="widthClass=compact" constant="24"/>
+                            </constraint>
                             <constraint firstAttribute="centerX" secondItem="mnE-36-SUx" secondAttribute="centerX" constant="-0.5" id="Byc-NX-JBI"/>
-                            <constraint firstAttribute="centerX" secondItem="0GK-pC-Hm6" secondAttribute="centerX" id="XOB-9d-3lW"/>
-                            <constraint firstAttribute="centerY" secondItem="0GK-pC-Hm6" secondAttribute="centerY" id="fbW-p8-IlX"/>
-                            <constraint firstItem="mnE-36-SUx" firstAttribute="top" secondItem="0GK-pC-Hm6" secondAttribute="bottom" constant="8" id="n3K-Zl-T9P"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Kid-7r-BQf" secondAttribute="trailing" constant="24" id="MfD-ZP-IN8"/>
+                            <constraint firstItem="Kid-7r-BQf" firstAttribute="top" secondItem="0GK-pC-Hm6" secondAttribute="bottom" constant="8" symbolic="YES" id="Rtz-rf-kMo"/>
+                            <constraint firstAttribute="centerX" secondItem="0GK-pC-Hm6" secondAttribute="centerX" id="XOB-9d-3lW">
+                                <variation key="widthClass=compact" constant="-6"/>
+                            </constraint>
+                            <constraint firstItem="Kid-7r-BQf" firstAttribute="leading" secondItem="R6D-R5-33V" secondAttribute="leadingMargin" constant="36" id="cYG-U7-HT9"/>
+                            <constraint firstAttribute="centerY" secondItem="0GK-pC-Hm6" secondAttribute="centerY" id="fbW-p8-IlX">
+                                <variation key="widthClass=compact" constant="31"/>
+                            </constraint>
+                            <constraint firstItem="mnE-36-SUx" firstAttribute="top" secondItem="0GK-pC-Hm6" secondAttribute="bottom" constant="8" id="n3K-Zl-T9P">
+                                <variation key="widthClass=compact" constant="39"/>
+                            </constraint>
+                            <constraint firstItem="Kid-7r-BQf" firstAttribute="leading" secondItem="0GK-pC-Hm6" secondAttribute="leading" id="sVL-9T-XSJ"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="mnE-36-SUx"/>
+                                <exclude reference="Kid-7r-BQf"/>
                                 <exclude reference="0GK-pC-Hm6"/>
                             </mask>
                             <mask key="constraints">
@@ -378,6 +398,10 @@
                                 <exclude reference="A0M-ls-tdj"/>
                                 <exclude reference="XOB-9d-3lW"/>
                                 <exclude reference="fbW-p8-IlX"/>
+                                <exclude reference="MfD-ZP-IN8"/>
+                                <exclude reference="Rtz-rf-kMo"/>
+                                <exclude reference="cYG-U7-HT9"/>
+                                <exclude reference="sVL-9T-XSJ"/>
                                 <exclude reference="Byc-NX-JBI"/>
                                 <exclude reference="n3K-Zl-T9P"/>
                             </mask>
@@ -385,6 +409,7 @@
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="mnE-36-SUx"/>
+                                <include reference="Kid-7r-BQf"/>
                                 <include reference="0GK-pC-Hm6"/>
                             </mask>
                             <mask key="constraints">
@@ -392,12 +417,17 @@
                                 <include reference="A0M-ls-tdj"/>
                                 <include reference="XOB-9d-3lW"/>
                                 <include reference="fbW-p8-IlX"/>
+                                <include reference="MfD-ZP-IN8"/>
+                                <include reference="Rtz-rf-kMo"/>
+                                <include reference="cYG-U7-HT9"/>
+                                <include reference="sVL-9T-XSJ"/>
                                 <include reference="Byc-NX-JBI"/>
                                 <include reference="n3K-Zl-T9P"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="descriptionTF" destination="Kid-7r-BQf" id="O9W-NN-MHz"/>
                         <outlet property="editarTF" destination="0GK-pC-Hm6" id="QB2-Hw-tOm"/>
                     </connections>
                 </viewController>

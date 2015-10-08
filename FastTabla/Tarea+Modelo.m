@@ -9,6 +9,7 @@
 #import "Tarea+Modelo.h"
 #import "AppDelegate.h"
 #import <CoreData/CoreData.h>
+#import "RESTHttpClient.h"
 
 @implementation Tarea (Modelo)
 
@@ -37,6 +38,9 @@
     tarea.textoMod3 = taskNNS;
     tarea.descripcionMod = descriptionNSS;
     [app.managedObjectContext save:nil];
+    
+    RESTHttpClient *restHttpClient = [RESTHttpClient createRESTHttpClientSingleton];
+    [restHttpClient addTask:tarea];
 }
 
 +(Tarea*)getTaskFromDBTask:(Tarea*)task{
@@ -52,6 +56,28 @@
     Tarea *taskInDB = (Tarea*)[[app.managedObjectContext executeFetchRequest:fetch error:nil] objectAtIndex:0];
 
     return taskInDB;
+}
+
++(void)editTaskOnDB:(Tarea*)taskToEdit taskTitle:(NSString*)taskTitle taskDescription:(NSString*)taskDescription{
+
+    AppDelegate *app = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    
+    Tarea *taskToEditFromDB = [self getTaskFromDBTask:taskToEdit];
+    taskToEditFromDB.textoMod3 = taskTitle;
+    taskToEditFromDB.descripcionMod = taskDescription;
+    
+    [app.managedObjectContext save:nil];
+    
+    RESTHttpClient *restHttpClient = [RESTHttpClient createRESTHttpClientSingleton];
+    [restHttpClient editTask:taskToEditFromDB];
+
+}
+
++(NSString*)getIDStringFromNSManagedObjectTask:(Tarea*)task{
+    NSURL *urlID = [[task objectID] URIRepresentation];
+    NSString *strId = [urlID absoluteString];
+    NSString *strID = [[strId lastPathComponent] substringFromIndex:1];
+    return strID;
 }
 
 @end

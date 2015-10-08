@@ -12,6 +12,7 @@
 #import "AppDelegate.h"
 #import "EditarVC.h"
 #import <CoreData/CoreData.h>
+#import "RESTHttpClient.h"
 
 #define ROWS_BATCH_REQUEST 20
 
@@ -149,7 +150,7 @@
 -(void)configurarCelda:(UITableViewCell*)celda enElIndexPath:(NSIndexPath*)indexPath{
     NSLog(@"%s",__FUNCTION__);
     Tarea *t = (Tarea*)[self.fetchedResultsController objectAtIndexPath:indexPath];
-    NSLog(@"%@, %@, %@",t,t.textoMod3,t.descripcionMod);
+    
     celda.textLabel.text = t.textoMod3;
     celda.detailTextLabel.text = t.descripcionMod;
     celda.accessibilityIdentifier = t.textoMod3; // For UI Test ;)
@@ -198,6 +199,9 @@
         Tarea *tareaAEliminar = (Tarea*)[self.fetchedResultsController objectAtIndexPath:indexPath];
         //http://stackoverflow.com/questions/16395428/delete-from-uitableview-using-an-nsfetchedresultscontroller
         [self.fetchedResultsController.managedObjectContext deleteObject:tareaAEliminar];
+        
+        RESTHttpClient *restHttpClient = [RESTHttpClient createRESTHttpClientSingleton];
+        [restHttpClient deleteTask:tareaAEliminar];
         
         [app.managedObjectContext save:nil];
     }

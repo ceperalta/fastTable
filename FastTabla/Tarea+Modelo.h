@@ -13,5 +13,8 @@
 +(NSFetchRequest*)filtrar_texto:(NSString*)textoAFiltrar;
 +(void)addTaskToBDTaskNNS:(NSString*)taskNNS descriptionNSS:(NSString*)descriptionNSS;
 +(Tarea*)getTaskFromDBTask:(Tarea*)task;
++(NSString*)getIDStringFromNSManagedObjectTask:(Tarea*)task;
++(void)editTaskOnDB:(Tarea*)taskToEdit taskTitle:(NSString*)taskTitle taskDescription:(NSString*)taskDescription;
+
 
 @end

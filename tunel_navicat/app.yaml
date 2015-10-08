@@ -1,0 +1,8 @@
+application: ceperalta-fast-tabla
+version: tunel
+runtime: php55
+api_version: 1
+
+handlers:
+- url: /.*
+  script: ntunnel_mysql.php

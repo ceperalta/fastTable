@@ -8,11 +8,13 @@
 
 #import "EditarVC.h"
 #import "AppDelegate.h"
+#import "Tarea+Modelo.h"
 
 
 @interface EditarVC ()
 
 @property (assign) float keyboardHeight;
+@property (weak, nonatomic) IBOutlet UITextField *descriptionTF;
 
 @end
 
@@ -29,19 +31,8 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)editButton_press:(id)sender {
-    AppDelegate *app = (AppDelegate*)[[UIApplication sharedApplication] delegate];
     
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Tarea" inManagedObjectContext:app.managedObjectContext];
-    NSFetchRequest *fetch = [[NSFetchRequest alloc] init];
-    [fetch setEntity:entity];
-    
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"self == %@",self.tareaAEditar];
-    [fetch setPredicate:predicate];
-   
-    Tarea *tareaAEditarAux = (Tarea*)[[app.managedObjectContext executeFetchRequest:fetch error:nil] objectAtIndex:0];
-    tareaAEditarAux.textoMod3 = self.editarTF.text;
-    
-    [app.managedObjectContext save:nil];
+    [Tarea editTaskOnDB:self.tareaAEditar taskTitle:self.editarTF.text taskDescription:self.descriptionTF.text];
     
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
@@ -49,6 +40,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     self.editarTF.text = self.tareaAEditar.textoMod3;
+    self.descriptionTF.text = self.tareaAEditar.descripcionMod;
     
     [super viewWillAppear:animated];
     // register for keyboard notifications
