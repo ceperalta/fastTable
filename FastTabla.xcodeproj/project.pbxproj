@@ -25,6 +25,7 @@
 		2A556B941BBDAF9C00C4C1ED /* Model.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 2A556B931BBDAF9C00C4C1ED /* Model.xcmappingmodel */; };
 		2A83D8C01BC30B450096C701 /* AgregarVCTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A83D8BF1BC30B450096C701 /* AgregarVCTest.m */; };
 		2ABEA1611BC5AA6D00575051 /* RESTHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ABEA1601BC5AA6D00575051 /* RESTHttpClient.m */; settings = {ASSET_TAGS = (); }; };
+		2ABEA1661BC6AF3700575051 /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ABEA1651BC6AF3700575051 /* BaseVC.m */; settings = {ASSET_TAGS = (); }; };
 		2D71A8B91550232E3F82C379 /* libPods-FastTablaTests2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F3367CBA2D85F966BCBAF23 /* libPods-FastTablaTests2.a */; };
 		50BA289B7E4AF2B07248F2DA /* libPods-FastTablaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9851C24FB1C3605BCA1559BF /* libPods-FastTablaTests.a */; };
 		F1E0FC8D37A98F912A3E4963 /* libPods-FastTabla.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A315A225202BF4A3CAF41982 /* libPods-FastTabla.a */; };
@@ -102,6 +103,8 @@
 		2A83D8BF1BC30B450096C701 /* AgregarVCTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgregarVCTest.m; sourceTree = "<group>"; };
 		2ABEA15F1BC5AA6D00575051 /* RESTHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESTHttpClient.h; sourceTree = "<group>"; };
 		2ABEA1601BC5AA6D00575051 /* RESTHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESTHttpClient.m; sourceTree = "<group>"; };
+		2ABEA1641BC6AF3700575051 /* BaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseVC.h; sourceTree = "<group>"; };
+		2ABEA1651BC6AF3700575051 /* BaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseVC.m; sourceTree = "<group>"; };
 		3D79F4828FF97A02BE8FC0D8 /* Pods-FastTablaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastTablaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FastTablaTests/Pods-FastTablaTests.release.xcconfig"; sourceTree = "<group>"; };
 		4C7123C57BBEE76CF164B351 /* Pods-FastTabla.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastTabla.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FastTabla/Pods-FastTabla.debug.xcconfig"; sourceTree = "<group>"; };
 		5F3367CBA2D85F966BCBAF23 /* libPods-FastTablaTests2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FastTablaTests2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -176,23 +179,19 @@
 		2A05E5E11BB9A91F00211A5A /* FastTabla */ = {
 			isa = PBXGroup;
 			children = (
-				2A05E5E21BB9A91F00211A5A /* Supporting Files */,
-				2A05E60B1BB9A93F00211A5A /* DB y models */,
-				2A556B751BBD8E1800C4C1ED /* MiNSEntityMigrationPolicy.h */,
-				2A556B761BBD8E1800C4C1ED /* MiNSEntityMigrationPolicy.m */,
-				2A556B551BBC748E00C4C1ED /* LongFromVC.h */,
-				2A556B561BBC748E00C4C1ED /* LongFromVC.m */,
-				2A05E5E61BB9A92000211A5A /* AppDelegate.h */,
-				2A05E5E71BB9A92000211A5A /* AppDelegate.m */,
-				2ABEA15F1BC5AA6D00575051 /* RESTHttpClient.h */,
-				2ABEA1601BC5AA6D00575051 /* RESTHttpClient.m */,
-				2A05E6151BB9B28F00211A5A /* EditarVC.h */,
-				2A05E6161BB9B28F00211A5A /* EditarVC.m */,
 				2A05E60F1BB9AA5700211A5A /* TareasTVC.h */,
 				2A05E6101BB9AA5700211A5A /* TareasTVC.m */,
-				2A05E5EF1BB9A92000211A5A /* Main.storyboard */,
+				2A05E6151BB9B28F00211A5A /* EditarVC.h */,
+				2A05E6161BB9B28F00211A5A /* EditarVC.m */,
 				2A05E6121BB9AF6700211A5A /* AgregarVC.h */,
 				2A05E6131BB9AF6700211A5A /* AgregarVC.m */,
+				2A556B551BBC748E00C4C1ED /* LongFromVC.h */,
+				2A556B561BBC748E00C4C1ED /* LongFromVC.m */,
+				2ABEA1671BC6BA2C00575051 /* UI */,
+				2ABEA1631BC6AF0F00575051 /* BaseClasses */,
+				2ABEA1621BC6AE8400575051 /* tools */,
+				2A05E5E21BB9A91F00211A5A /* Supporting Files */,
+				2A05E60B1BB9A93F00211A5A /* DB y models */,
 			);
 			path = FastTabla;
 			sourceTree = "<group>";
@@ -200,6 +199,8 @@
 		2A05E5E21BB9A91F00211A5A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2A05E5E61BB9A92000211A5A /* AppDelegate.h */,
+				2A05E5E71BB9A92000211A5A /* AppDelegate.m */,
 				2A05E5F21BB9A92000211A5A /* Images.xcassets */,
 				2A05E5F41BB9A92000211A5A /* LaunchScreen.xib */,
 				2A05E5E31BB9A92000211A5A /* Info.plist */,
@@ -245,6 +246,34 @@
 				2A1AAF8C1BC43CB400C2EE10 /* Info.plist */,
 			);
 			path = FastTablaUITests;
+			sourceTree = "<group>";
+		};
+		2ABEA1621BC6AE8400575051 /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				2A556B751BBD8E1800C4C1ED /* MiNSEntityMigrationPolicy.h */,
+				2A556B761BBD8E1800C4C1ED /* MiNSEntityMigrationPolicy.m */,
+				2ABEA15F1BC5AA6D00575051 /* RESTHttpClient.h */,
+				2ABEA1601BC5AA6D00575051 /* RESTHttpClient.m */,
+			);
+			name = tools;
+			sourceTree = "<group>";
+		};
+		2ABEA1631BC6AF0F00575051 /* BaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+				2ABEA1641BC6AF3700575051 /* BaseVC.h */,
+				2ABEA1651BC6AF3700575051 /* BaseVC.m */,
+			);
+			name = BaseClasses;
+			sourceTree = "<group>";
+		};
+		2ABEA1671BC6BA2C00575051 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				2A05E5EF1BB9A92000211A5A /* Main.storyboard */,
+			);
+			name = UI;
 			sourceTree = "<group>";
 		};
 		7CED07F54987EA19ABA4E7C7 /* Frameworks */ = {
@@ -567,6 +596,7 @@
 				2ABEA1611BC5AA6D00575051 /* RESTHttpClient.m in Sources */,
 				2A05E5E81BB9A92000211A5A /* AppDelegate.m in Sources */,
 				2A2D30701BBB2A0B00FAD041 /* Tarea+Modelo.m in Sources */,
+				2ABEA1661BC6AF3700575051 /* BaseVC.m in Sources */,
 				2A05E5EB1BB9A92000211A5A /* FastTabla.xcdatamodeld in Sources */,
 				2A05E6171BB9B28F00211A5A /* EditarVC.m in Sources */,
 				2A05E6141BB9AF6700211A5A /* AgregarVC.m in Sources */,

@@ -22,12 +22,7 @@
     [f setEntity:e];
     NSPredicate *p = [NSPredicate predicateWithFormat:@"textoMod3 like [cd] %@",[NSString stringWithFormat:@"*%@*",textoAFiltrar]];
     [f setPredicate:p];
-    
-    /*
-    NSArray *a = [app.managedObjectContext executeFetchRequest:f error:nil];
-    NSMutableArray *ma = [a mutableCopy];
-    */
-    
+
     return f;
 }
 

@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseVC.h"
 
-@interface LongFromVC : UIViewController
+@interface LongFromVC : BaseVC
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (assign) float keyboardHeight;
 @property (weak, nonatomic) IBOutlet UITextField *textField1;

@@ -166,9 +166,6 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     NSLog(@"%s",__FUNCTION__);
     id  sectionInfo = [[self.fetchedResultsController sections] objectAtIndex:section];
-    
-    NSLog(@"Nro resultados: %d",[sectionInfo numberOfObjects]);
-    
     return [sectionInfo numberOfObjects];
 }
 

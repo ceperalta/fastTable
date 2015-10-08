@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseVC.h"
 
-@interface AgregarVC : UIViewController
+@interface AgregarVC : BaseVC
 @property (weak, nonatomic) IBOutlet UITextField *agregarTF;
 @property (weak, nonatomic) IBOutlet UITextField *descripcionTF;
 

@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "Tarea.h"
+#import "BaseVC.h"
 
-@interface EditarVC : UIViewController
+@interface EditarVC : BaseVC
 @property (weak, nonatomic) IBOutlet UITextField *editarTF;
 @property (strong, nonatomic) Tarea *tareaAEditar;
 
