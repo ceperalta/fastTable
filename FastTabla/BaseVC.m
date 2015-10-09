@@ -11,11 +11,17 @@
 @interface BaseVC ()
 
 @property (assign) float keyboardHeight;
+@property (assign) CGRect rectOriginalView;
 
 @end
 
 @implementation BaseVC
 
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.rectOriginalView = self.view.frame;
+}
 
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -50,66 +56,49 @@
 
 #pragma mark - ManageKeyBoard and the Scrollview ;)
 
-#define KEYBOARD_ADJUST_JUST_PERFECT_TO_SUBTRACT_HEIGHT 32;
-
-
 -(void)keyboardWillShow:(NSNotification*)notification {
     NSLog(@"%s",__FUNCTION__);
     
     NSDictionary* keyboardInfo = [notification userInfo];
     NSValue* keyboardFrameBegin = [keyboardInfo valueForKey:UIKeyboardFrameBeginUserInfoKey];
     CGRect keyboardFrameBeginRect = [keyboardFrameBegin CGRectValue];
-    NSLog(@"height ok keyboard: %f",keyboardFrameBeginRect.size.height);
-    _keyboardHeight = keyboardFrameBeginRect.size.height - KEYBOARD_ADJUST_JUST_PERFECT_TO_SUBTRACT_HEIGHT;
+    _keyboardHeight = keyboardFrameBeginRect.size.height;
     
-    if (self.view.frame.origin.y >= 0)
-    {
-        [self setViewMovedUp:YES];
-    }
-    else if (self.view.frame.origin.y < 0)
-    {
-        [self setViewMovedUp:NO];
-    }
+    [self setViewMovedUp:YES];
 }
 
 -(void)keyboardWillHide {
     NSLog(@"%s",__FUNCTION__);
-    
-    if (self.view.frame.origin.y >= 0)
-    {
-        [self setViewMovedUp:YES];
-    }
-    else if (self.view.frame.origin.y < 0)
-    {
-        [self setViewMovedUp:NO];
-    }
+
+    [self setViewMovedUp:NO];
 }
-
-
 
 -(void)setViewMovedUp:(BOOL)movedUp
 {
-    NSLog(@"%s",__FUNCTION__);
-    [UIView animateWithDuration: 0.3
-                          delay: 0.0
-                        options: UIViewAnimationOptionCurveEaseInOut
-                     animations:^{
-                         CGRect rect = self.view.frame;
-                         if (movedUp)
-                         {
-                             rect.origin.y -= _keyboardHeight;
-                             rect.size.height += _keyboardHeight;
-                         }
-                         else
-                         {
-                             rect.origin.y += _keyboardHeight;
-                             rect.size.height -= _keyboardHeight;
-                         }
-                         self.view.frame = rect;
-                         
-                     }
-                     completion:nil];
+    float deltaScaleWithoutKeyboard = (_rectOriginalView.size.height - _keyboardHeight)/_rectOriginalView.size.height;
     
+    if (movedUp)
+    {
+        CGAffineTransform move = CGAffineTransformMakeTranslation(0, -(_keyboardHeight*deltaScaleWithoutKeyboard));
+        CGAffineTransform scale = CGAffineTransformMakeScale(1, deltaScaleWithoutKeyboard);
+        CGAffineTransform moveAndScaleAT = CGAffineTransformConcat(move, scale);
+        
+        self.view.transform = moveAndScaleAT;
+        
+        for (UIView *subView in [self.view subviews]) {
+            subView.transform = CGAffineTransformInvert(scale);
+        }
+    }
+    else
+    {
+        CGAffineTransform move = CGAffineTransformMakeTranslation(0, 0);
+        CGAffineTransform scale = CGAffineTransformMakeScale(1, 1);
+        self.view.transform = CGAffineTransformConcat(move, scale);
+        for (UIView *subView in [self.view subviews]) {
+            subView.transform = CGAffineTransformIdentity;
+        }
+        
+    }
 }
 
 
