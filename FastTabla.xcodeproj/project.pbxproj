@@ -26,7 +26,8 @@
 		2A83D8C01BC30B450096C701 /* AgregarVCTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A83D8BF1BC30B450096C701 /* AgregarVCTest.m */; };
 		2ABEA1611BC5AA6D00575051 /* RESTHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ABEA1601BC5AA6D00575051 /* RESTHttpClient.m */; settings = {ASSET_TAGS = (); }; };
 		2ABEA1661BC6AF3700575051 /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ABEA1651BC6AF3700575051 /* BaseVC.m */; settings = {ASSET_TAGS = (); }; };
-		50BA289B7E4AF2B07248F2DA /* libPods-FastTablaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9851C24FB1C3605BCA1559BF /* libPods-FastTablaTests.a */; };
+		2ACBD0F71BCED67000088EE1 /* EditarVC.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2ACBD0F91BCED67000088EE1 /* EditarVC.strings */; };
+		2ACBD0FE1BCED87100088EE1 /* AgregarVC.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2ACBD1001BCED87100088EE1 /* AgregarVC.strings */; };
 		F1E0FC8D37A98F912A3E4963 /* libPods-FastTabla.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A315A225202BF4A3CAF41982 /* libPods-FastTabla.a */; };
 /* End PBXBuildFile section */
 
@@ -97,6 +98,14 @@
 		2ABEA1641BC6AF3700575051 /* BaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseVC.h; sourceTree = "<group>"; };
 		2ABEA1651BC6AF3700575051 /* BaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseVC.m; sourceTree = "<group>"; };
 		2ABEA16D1BC8365F00575051 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		2ACBD0F31BCED1DA00088EE1 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		2ACBD0F41BCED1DB00088EE1 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		2ACBD0F81BCED67000088EE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/EditarVC.strings; sourceTree = "<group>"; };
+		2ACBD0FA1BCED68600088EE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/EditarVC.strings; sourceTree = "<group>"; };
+		2ACBD0FB1BCED68700088EE1 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/EditarVC.strings; sourceTree = "<group>"; };
+		2ACBD0FF1BCED87100088EE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/AgregarVC.strings; sourceTree = "<group>"; };
+		2ACBD1011BCED87400088EE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/AgregarVC.strings; sourceTree = "<group>"; };
+		2ACBD1021BCED87400088EE1 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/AgregarVC.strings; sourceTree = "<group>"; };
 		3D79F4828FF97A02BE8FC0D8 /* Pods-FastTablaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastTablaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FastTablaTests/Pods-FastTablaTests.release.xcconfig"; sourceTree = "<group>"; };
 		4C7123C57BBEE76CF164B351 /* Pods-FastTabla.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastTabla.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FastTabla/Pods-FastTabla.debug.xcconfig"; sourceTree = "<group>"; };
 		5F3367CBA2D85F966BCBAF23 /* libPods-FastTablaTests2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FastTablaTests2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,7 +131,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50BA289B7E4AF2B07248F2DA /* libPods-FastTablaTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,8 +174,10 @@
 				2A05E6101BB9AA5700211A5A /* TareasTVC.m */,
 				2A05E6151BB9B28F00211A5A /* EditarVC.h */,
 				2A05E6161BB9B28F00211A5A /* EditarVC.m */,
+				2ACBD0F91BCED67000088EE1 /* EditarVC.strings */,
 				2A05E6121BB9AF6700211A5A /* AgregarVC.h */,
 				2A05E6131BB9AF6700211A5A /* AgregarVC.m */,
+				2ACBD1001BCED87100088EE1 /* AgregarVC.strings */,
 				2A556B551BBC748E00C4C1ED /* LongFromVC.h */,
 				2A556B561BBC748E00C4C1ED /* LongFromVC.m */,
 				2ABEA1671BC6BA2C00575051 /* UI */,
@@ -377,6 +387,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 2A05E5D61BB9A91F00211A5A;
 			productRefGroup = 2A05E5E01BB9A91F00211A5A /* Products */;
@@ -397,7 +408,9 @@
 			files = (
 				2A05E5F11BB9A92000211A5A /* Main.storyboard in Resources */,
 				2A05E5F61BB9A92000211A5A /* LaunchScreen.xib in Resources */,
+				2ACBD0F71BCED67000088EE1 /* EditarVC.strings in Resources */,
 				2A05E5F31BB9A92000211A5A /* Images.xcassets in Resources */,
+				2ACBD0FE1BCED87100088EE1 /* AgregarVC.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -567,6 +580,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				2A05E5F01BB9A92000211A5A /* Base */,
+				2ACBD0F31BCED1DA00088EE1 /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -575,8 +589,29 @@
 			isa = PBXVariantGroup;
 			children = (
 				2A05E5F51BB9A92000211A5A /* Base */,
+				2ACBD0F41BCED1DB00088EE1 /* es */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		2ACBD0F91BCED67000088EE1 /* EditarVC.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2ACBD0F81BCED67000088EE1 /* Base */,
+				2ACBD0FA1BCED68600088EE1 /* en */,
+				2ACBD0FB1BCED68700088EE1 /* es */,
+			);
+			name = EditarVC.strings;
+			sourceTree = "<group>";
+		};
+		2ACBD1001BCED87100088EE1 /* AgregarVC.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2ACBD0FF1BCED87100088EE1 /* Base */,
+				2ACBD1011BCED87400088EE1 /* en */,
+				2ACBD1021BCED87400088EE1 /* es */,
+			);
+			name = AgregarVC.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -670,6 +705,7 @@
 			baseConfigurationReference = 4C7123C57BBEE76CF164B351 /* Pods-FastTabla.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
 				ENABLE_TESTABILITY = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = FastTabla/PrefixHeader.pch;
@@ -677,6 +713,7 @@
 					"$(inherited)",
 					"COCOAPODS=1",
 				);
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = FastTabla/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -690,9 +727,11 @@
 			baseConfigurationReference = AB176D1819ED335AC28E1B25 /* Pods-FastTabla.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
 				ENABLE_TESTABILITY = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = FastTabla/PrefixHeader.pch;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = FastTabla/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

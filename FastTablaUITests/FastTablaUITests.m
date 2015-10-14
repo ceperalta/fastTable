@@ -36,7 +36,7 @@
     
     
     XCUIApplication *app = [[XCUIApplication alloc] init];
-    [app.navigationBars[@"Tareas"].buttons[@"Agregar"] tap];
+    [app.navigationBars[@"Tasks"].buttons[@"Add"] tap];
    
     [app.textFields[@"theTitle"] tap];
     [app.textFields[@"theTitle"] typeText:@"comprar pan"];
@@ -44,14 +44,14 @@
     [app.textFields[@"theDescriptionField"] tap];
     [app.textFields[@"theDescriptionField"] typeText:@"del bueno, árabe!"];
    
-    [app.buttons[@"Agregar"] tap];
+    [app.buttons[@"Add"] tap];
     
     [[[app.tables childrenMatchingType:XCUIElementTypeCell] elementBoundByIndex:0] tap];
     
     [app.textFields[@"theTitle"] tap];
     [app.textFields[@"theTitle"] typeText:@" modificado!"];
     
-    [app.buttons[@"Editar"] tap];
+    [app.buttons[@"Edit"] tap];
     
     
     XCUIElement *firstCell = [[app.tables childrenMatchingType:XCUIElementTypeCell] elementBoundByIndex:0];

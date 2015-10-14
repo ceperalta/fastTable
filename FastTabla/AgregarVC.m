@@ -11,6 +11,7 @@
 #import "Tarea.h"
 #import "Tarea+Modelo.h"
 
+#define NEW_TASK NSLocalizedStringFromTable(@"NEW_TASK", @"AgregarVC", @"new task title of the agregar vc")
 
 @interface AgregarVC ()
 
@@ -22,7 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"Nueva Tarea";
+    self.title = NEW_TASK; // @"Nueva Tarea";
 }
 
 - (IBAction)agregarTareasBTN_press:(id)sender {

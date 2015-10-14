@@ -1,0 +1,33 @@
+
+/* Class = "UITextField"; placeholder = "Tarea"; ObjectID = "0GK-pC-Hm6"; */
+"0GK-pC-Hm6.placeholder" = "Tarea";
+
+/* Class = "UITextField"; placeholder = "Descripción"; ObjectID = "7XE-A0-aLr"; */
+"7XE-A0-aLr.placeholder" = "Descripción";
+
+/* Class = "UITextField"; placeholder = "Título"; ObjectID = "CEh-7N-0ki"; */
+"CEh-7N-0ki.placeholder" = "Título";
+
+/* Class = "UITextField"; placeholder = "Descripción"; ObjectID = "Kid-7r-BQf"; */
+"Kid-7r-BQf.placeholder" = "Descripción";
+
+/* Class = "UIButton"; normalTitle = "Agregar"; ObjectID = "Qb5-J9-7vX"; */
+"Qb5-J9-7vX.normalTitle" = "Agregar";
+
+/* Class = "UILabel"; text = "Uno:"; ObjectID = "Zcf-vo-6LE"; */
+"Zcf-vo-6LE.text" = "Uno:";
+
+/* Class = "UITabBarItem"; title = "Long Form :)"; ObjectID = "kgf-8u-FdU"; */
+"kgf-8u-FdU.title" = "Formulario largo :)";
+
+/* Class = "UIBarButtonItem"; title = "Agregar"; ObjectID = "mXR-Gb-BMB"; */
+"mXR-Gb-BMB.title" = "Agregar";
+
+/* Class = "UIButton"; normalTitle = "Editar"; ObjectID = "mnE-36-SUx"; */
+"mnE-36-SUx.normalTitle" = "Editar";
+
+/* Class = "UITabBarItem"; title = "Tareas"; ObjectID = "uKq-OK-3ze"; */
+"uKq-OK-3ze.title" = "Tareas";
+
+/* Class = "UINavigationItem"; title = "Tareas"; ObjectID = "zcW-qZ-pP7"; */
+"zcW-qZ-pP7.title" = "Tareas";

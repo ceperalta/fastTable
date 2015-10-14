@@ -10,7 +10,7 @@
 #import "AppDelegate.h"
 #import "Tarea+Modelo.h"
 
-
+#define EDIT NSLocalizedStringFromTable(@"EDIT", @"EditarVC", @"edit button in editarVC")
 
 @interface EditarVC ()
 
@@ -23,7 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"Editar";
+    self.title = EDIT; // @"Editar"
 }
 
 - (void)didReceiveMemoryWarning {
