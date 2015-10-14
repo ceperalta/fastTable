@@ -48,9 +48,8 @@
     
     [[[app.tables childrenMatchingType:XCUIElementTypeCell] elementBoundByIndex:0] tap];
     
-    XCUIElement *textField = [[[[[[[[[[app childrenMatchingType:XCUIElementTypeWindow] elementBoundByIndex:0] childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeTextField].element;
-    [textField tap];
-    [textField typeText:@" modificado!"];
+    [app.textFields[@"theTitle"] tap];
+    [app.textFields[@"theTitle"] typeText:@" modificado!"];
     
     [app.buttons[@"Editar"] tap];
     
